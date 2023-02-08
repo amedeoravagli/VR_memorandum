@@ -10,17 +10,27 @@ public class Taggable : Interactable
 
     public override void Interact(GameObject caller)
     {  
-        if (card_tag == null) {
-
-            card_tag = caller.GetComponent<FPSUI>().GetCardTag();
-            
-        }else
+        AppState appstate = caller.GetComponent<AppState>();
+        if (!appstate.IsTest())
         {
-            caller.GetComponent<FPSUI>().PushCardTag(card_tag);
-            card_tag = null;
-        }
+            if (card_tag == null)
+            {
+                
+                card_tag = appstate.BindCardTag();
+            }
+            else
+            {
+                if (appstate.GetDetachableCardTag() == card_tag)
+                {
+                    appstate.UnbindCardTag();
+                    card_tag = null;
+                }
 
-        Debug.Log(card_tag);
+            }
+
+            Debug.Log(card_tag);
+        }
+        
     }
 
 

@@ -9,18 +9,20 @@ public class FPSInteractionManager : MonoBehaviour
     [SerializeField] private bool _debugRay;
     [SerializeField] private float _interactionDistance;
 
-    [SerializeField] private Image _target;
-
     private Interactable _pointingInteractable;
-
+    
     private CharacterController _fpsController;
     private Vector3 _rayOrigin;
 
+    private AppState _appstate;
+
+    private float _minScrollLimit = 1.0f;
     //private Taggable _taggedObject = null;
 
     // Start is called before the first frame update
     void Start()
     {
+        _appstate = GetComponent<AppState>();
         _fpsController = GetComponent<CharacterController>();
     }
 
@@ -30,11 +32,22 @@ public class FPSInteractionManager : MonoBehaviour
 
         
         CheckInteraction();
-
-        UpdateUITarget();
+        CheckScrollMouseWheel();
+        
 
         if (_debugRay)
             DebugRaycast();
+    }
+
+    private void CheckScrollMouseWheel()
+    {
+        float delta = Input.mouseScrollDelta.y;
+        if (delta == _minScrollLimit || delta == -_minScrollLimit)
+        {
+
+            _appstate.ChangeIndex(delta);
+
+        }
     }
 
     private void CheckInteraction()
@@ -45,28 +58,42 @@ public class FPSInteractionManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit, _interactionDistance))
         {
             //Check if is interactable
-            _pointingInteractable = hit.transform.GetComponent<Taggable>();
-            if (_pointingInteractable)
+            Interactable _pointing = hit.transform.GetComponent<Taggable>();
+            if (_pointing)
             {
+                if(_pointing != _pointingInteractable)
+                {
+                    if (_pointingInteractable)
+                    {
+                        _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false);
+                    }
+                    _pointingInteractable = _pointing;
+                    _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(true);
+                }
                 if (Input.GetMouseButtonDown(0))
                     _pointingInteractable.Interact(gameObject);
+
             }
+
             
         }
         //If NOTHING is detected set all to null
         else
         {
+            if(_pointingInteractable != null)
+            {
+                _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false);
+
+            }
             _pointingInteractable = null;
         }
     }
 
-    void UpdateUITarget()
+    public Interactable GetInteractable()
     {
-        if (_pointingInteractable)
-            _target.color = Color.green;
-        else
-            _target.color = Color.red;
+        return _pointingInteractable;
     }
+    
 
     private void DebugRaycast()
     {

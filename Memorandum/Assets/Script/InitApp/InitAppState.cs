@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 public class InitAppState : MonoBehaviour
 {
-    public List<string> cardList = new List<string>();
+    public List<string> _cardList = new List<string>();
     public bool isTutorial = false;
   
 
@@ -17,12 +17,12 @@ public class InitAppState : MonoBehaviour
     void OnEnable()
     {
         
-        cardList = GetCardTagsFromFile("Assets/SrcWords/Words.txt");
+        _cardList = GetCardTagsFromFile("Assets/SrcWords/Words.txt");
         Debug.Log("InitAppState inizializzato");
         
     }
 
-    List<string> GetCardTagsFromFile(string path_file)
+    private List<string> GetCardTagsFromFile(string path_file)
     {   
         if (!File.Exists(path_file))
         {
@@ -31,6 +31,11 @@ public class InitAppState : MonoBehaviour
         string content = File.ReadAllText(path_file);
 
         return content.Split("\n").ToList();
+    }
+
+    public List<string> GetRoomTags(int room)
+    {
+        return _cardList;
     }
 
     // Update is called once per frame
