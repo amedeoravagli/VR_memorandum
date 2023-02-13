@@ -6,29 +6,26 @@ using UnityEngine;
 public class Taggable : Interactable
 {
 
-    private String card_tag = null;
-
     public override void Interact(GameObject caller)
     {  
         AppState appstate = caller.GetComponent<AppState>();
         if (!appstate.IsTest())
         {
-            if (card_tag == null)
+            if (this.card_tag == null)
             {
-                
-                card_tag = appstate.BindCardTag();
+                this.card_tag = appstate.BindCardTag();
             }
             else
             {
-                if (appstate.GetDetachableCardTag() == card_tag)
+                if (appstate.GetDetachableCardTag() == this.card_tag)
                 {
                     appstate.UnbindCardTag();
-                    card_tag = null;
+                    this.card_tag = null;
                 }
 
             }
 
-            Debug.Log(card_tag);
+            Debug.Log(this.card_tag);
         }
         
     }

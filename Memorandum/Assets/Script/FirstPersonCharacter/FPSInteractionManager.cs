@@ -58,31 +58,36 @@ public class FPSInteractionManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit, _interactionDistance))
         {
             //Check if is interactable
-            Interactable _pointing = hit.transform.GetComponent<Taggable>();
+            Interactable _pointing = hit.transform.GetComponent<Interactable>();
             if (_pointing)
             {
-                if(_pointing != _pointingInteractable)
+                
+                if (_pointing.GetComponent<Taggable>())
                 {
-                    if (_pointingInteractable)
+                    if (_pointing != _pointingInteractable)
                     {
-                        _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false);
+                        if (_pointingInteractable)
+                        {
+                            _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false, false);
+                        }
+                        _pointingInteractable = _pointing;
+                        _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(true, false);
                     }
-                    _pointingInteractable = _pointing;
-                    _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(true);
                 }
+                
                 if (Input.GetMouseButtonDown(0))
                     _pointingInteractable.Interact(gameObject);
+                _pointingInteractable = _pointing;
 
             }
 
-            
         }
         //If NOTHING is detected set all to null
         else
         {
-            if(_pointingInteractable != null)
-            {
-                _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false);
+            if(_pointingInteractable != null && _pointingInteractable.GetComponent<Taggable>())
+            {   
+                _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false,false);
 
             }
             _pointingInteractable = null;
