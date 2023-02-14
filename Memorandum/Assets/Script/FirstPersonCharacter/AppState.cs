@@ -33,12 +33,12 @@ public class AppState : MonoBehaviour
 
     public List<string> GetTestRoomTags(int roomIndex)
     {
-        List<string> tags = new List<string>(); 
-        for(int j = 0; j < roomIndex+1; j++)
+        //List<string> tags = new List<string>(); 
+        /*for(int j = 0; j < roomIndex+1; j++)
         {
             tags.AddRange(_available_cardtags[j]);
-        }
-        return tags;
+        }*/
+        return _binded_cardtags;
     }
 
 

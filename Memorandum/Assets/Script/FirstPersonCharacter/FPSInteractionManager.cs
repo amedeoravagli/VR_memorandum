@@ -10,7 +10,7 @@ public class FPSInteractionManager : MonoBehaviour
     [SerializeField] private float _interactionDistance;
 
     private Interactable _pointingInteractable;
-    
+    private Taggable _pointingTaggable;
     private CharacterController _fpsController;
     private Vector3 _rayOrigin;
 
@@ -61,25 +61,43 @@ public class FPSInteractionManager : MonoBehaviour
             Interactable _pointing = hit.transform.GetComponent<Interactable>();
             if (_pointing)
             {
-                
-                if (_pointing.GetComponent<Taggable>())
+                if (_pointingInteractable && _pointingInteractable.name != _pointing.name)
                 {
+                    _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
+                }
+
+                Taggable _pointingTaggable = _pointing.GetComponent<Taggable>();
+
+                if (_pointingTaggable)
+                {
+                    _pointingTaggable.WatchTMP();
+
                     if (_pointing != _pointingInteractable)
                     {
+                        _pointingTaggable.EnableTMP();
                         if (_pointingInteractable)
                         {
+                            //_pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
                             _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false, false);
                         }
-                        _pointingInteractable = _pointing;
-                        _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(true, false);
+                        _pointing.GetComponent<Highlight>()?.ToggleHighlight(true, false);
                     }
                 }
-                
-                if (Input.GetMouseButtonDown(0))
-                    _pointingInteractable.Interact(gameObject);
-                _pointingInteractable = _pointing;
 
+                _pointingInteractable = _pointing;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    _pointingInteractable.Interact(gameObject);
+                    _pointingTaggable.EnableTMP();
+                }
+                
             }
+            else if (_pointingInteractable) // se inquadro qualcodisabilito l'ultimo testo mostrato
+            {
+                _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
+            }
+
+            
 
         }
         //If NOTHING is detected set all to null
@@ -88,6 +106,7 @@ public class FPSInteractionManager : MonoBehaviour
             if(_pointingInteractable != null && _pointingInteractable.GetComponent<Taggable>())
             {   
                 _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false,false);
+                _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
 
             }
             _pointingInteractable = null;

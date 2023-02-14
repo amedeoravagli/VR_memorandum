@@ -11,7 +11,8 @@ public class MiniGames : Interactable
     [SerializeField] private GameObject _actionLauncherGO;
     [SerializeField] private ActionLauncher _actionLauncher;
     [SerializeField] private int _roomIndex = -1;
-    [SerializeField] private GameObject _playerPosition;
+    [SerializeField] private Door _door;
+
     private int _indexTagVerified = 0;
     private int _numError = 0;
     private List<string> _cardTagsToTest = new List<string>();
@@ -29,7 +30,6 @@ public class MiniGames : Interactable
         if (_roomIndex == 0)
         {
             AttachReadyEvent();
-
         }
     }
 
@@ -63,18 +63,30 @@ public class MiniGames : Interactable
             //_highlight.ToggleHighlight(false, false);  
             //ToggleHighlight(false, false);  
              
-            caller.transform.position = _playerPosition.transform.position;
-            RandomizeTags();
+            RandomizeTagsOnElement();
             appstate.ChangeFase();
+            GetComponent<BoxCollider>().enabled = false;
+            MakeElementInteractive(true);
         }
     }
 
-    private void RandomizeTags()
+    private void MakeElementInteractive(bool interactable)
+    {
+        foreach (var element in GetComponentsInChildren<TestElement>())
+        {
+            element.gameObject.GetComponent<BoxCollider>().enabled = interactable;
+
+            Debug.Log("Element Test name : " + element.name + " collider abilitato " + element.gameObject.GetComponent<BoxCollider>().enabled);
+
+        }
+    }
+
+    private void RandomizeTagsOnElement()
     {
 
         Debug.Log("Associazione random dei tag agli Element Test");
         int numCardTags = _cardTagsToTest.Count;
-        List<string> tags = _cardTagsToTest;
+        List<string> tags = new List<string>(_cardTagsToTest);
         if (GetComponentsInChildren<TestElement>() == null || GetComponentsInChildren<TestElement>().Length == 0)
         {
             Debug.Log("TestElement non trovati");
@@ -99,25 +111,38 @@ public class MiniGames : Interactable
     {
         if ( GameWinEvent != null)
         {
+            MakeElementInteractive(false);
+            _door.OpenDoor(-90);
             DetachtReadyEvent();
             GameWinEvent.Invoke(_roomIndex+1);
         }
+    }
+
+    private void Lose()
+    {
+        Debug.Log("Hai Perso Merda");
     }
 
     private void OnGameWin(int newRoomIndex)
     {
         if(newRoomIndex == _roomIndex)
         {
-            
             AttachReadyEvent();
         }
     }
 
     public void VerifyTags(string card_tag)
     {
-        if(card_tag != _cardTagsToTest[_indexTagVerified + 1])
+        Debug.Log("Lunghezza _cardTagsToTest: " + _cardTagsToTest.Count + " parola all'indice: " + _indexTagVerified);
+        Debug.Log("Indice da verificare: " + _indexTagVerified + " confronto card tag: " + card_tag);
+        if(card_tag != _cardTagsToTest[_indexTagVerified])
         {
             _numError++;
+            _indexTagVerified = 0;
+            if(_numError == 3)
+            {
+                Lose();   
+            }
         }
         else
         {
