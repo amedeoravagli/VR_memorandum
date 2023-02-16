@@ -7,11 +7,15 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void MenuButton()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(1);
     }
 
     public void StartGame()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManager.LoadScene(2); // 2 is the game
     }
 

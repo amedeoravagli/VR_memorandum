@@ -63,7 +63,9 @@ public class AppState : MonoBehaviour
 
     public void GoToGameMenu()
     {
-        SceneManager.LoadScene(7); // carico scena vittoria
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(6); // carico scena vittoria
     }
 
     public int NumberCardtagLast()

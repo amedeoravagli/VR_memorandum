@@ -9,7 +9,7 @@ public class NPCScript : Interactable
 {
     [SerializeField] private AppState _appstate;
     private bool _active = false;
-    private Camera _target;
+    [SerializeField] private Camera _target;
     private List<string> _dialogues;
     private int _indexDialogues = 0;
     private TextMeshPro _promptText;
@@ -19,7 +19,7 @@ public class NPCScript : Interactable
     {
         _promptText = GetComponentInChildren<TextMeshPro>();
         _promptText.text = "Hei! Ti senti un po' spaesato chiedi pure a me, sono qui per aiutarti.";
-        _target = Camera.main;
+        //_target = Camera.main;
         _dialogues = LoadDialoguesFromDisk();
     }
 

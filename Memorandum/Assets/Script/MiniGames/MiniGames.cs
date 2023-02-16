@@ -137,7 +137,9 @@ public class MiniGames : Interactable
     private void Lose()
     {
         _audioSource.PlayOneShot(_audio_sconfitta);
-        SceneManager.LoadScene(6);//carico scena di sconfitta
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(7);//carico scena di sconfitta
         Debug.Log("Hai Perso");
     }
 

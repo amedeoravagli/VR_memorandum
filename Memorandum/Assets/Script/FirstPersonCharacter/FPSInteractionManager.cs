@@ -50,7 +50,11 @@ public class FPSInteractionManager : MonoBehaviour
             //se rilasciamo il tasto esc andiamo in pausa
             ChangePauseStatus();
         }
-
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            //se rilasciamo il tasto esc andiamo in pausa
+            _appstate.OnWinAction(7);
+        }
         if (_debugRay)
             DebugRaycast();
     }

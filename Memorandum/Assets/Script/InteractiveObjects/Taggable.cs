@@ -14,7 +14,7 @@ public class Taggable : Interactable
     private void Start()
     {
         _visualCardTag = GetComponentInChildren<TextMeshPro>();
-        _target = Camera.main;
+        _target = FindObjectOfType<Camera>();
         //PositionigTMP();
     }
     public void DisableTMP()
