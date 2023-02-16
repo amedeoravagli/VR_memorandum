@@ -1,0 +1,23 @@
+ciao ! benvenuto in Memorandum, io sono TATO e ti insegnerò come usare il palazzo della memoria, una delle tecniche di memorizzazione più efficaci e antiche.
+questa tecnica si basa sull’associazione di parole o concetti da ricordare con luoghi fisici, o in questo caso virtuali
+scegli degli oggetti a cui associare le parole che ti verranno fornite e cerca di immaginare un’associazione tra le due
+ricordati di esplorare l’ambiente sempre in senso orario, così da ricordarti l’ordine
+questa tecnica si basa sull’associazione tra parole e oggetti nell’ambiente, devi prima familiarizzare con l’ambiente, vai a esplorare la tua nuova casa!
+adesso prova a fare la prima associazione, immagina la parola che vuoi ricordare e collegala ad un oggetto di una stanza
+-Avvicinati ad un oggetto per collegare una parola-
+prova a ricordare queste 4 parole associandole in ordine ad oggetti nella stanza
+-L’utente gira per la stanza e fa le associazioni.
+proviamo a fare un test per vedere se hai imparato
+-musichetta di gioco-
+-se le sbaglia:
+forse devi ancora prenderci la mano, perché non riprovi?
+-se fa tutto bene:
+wow, sei stato incredibile! padroneggi già la tecnica
+grande! Continua così!
+wow! Che memoria!
+-se ne sbaglia una o due:
+be’ non male, stai cominciando ad imparare. Vedrai che con la pratica non ti sfuggirà più nulla!
+non male come inizio!
+-Dialogo alla fine del primo gioco:
+passa alla prossima stanza!
+complimenti! hai esplorato tutta la casa! adesso padroneggi la tecnica del palazzo della memoria, usala per memorizzare ciò che ti serve. quando vorrai tornare a fare un ripasso, mi trovi all’ingresso.

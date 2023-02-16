@@ -12,13 +12,14 @@ public class Door : MonoBehaviour
     [SerializeField] private GameObject _doorHindge;
     [SerializeField] private float _openingTime = 1f;
     [SerializeField] private float _closingTime = 0.5f;
-
+    private AudioSource _audioSource = null;
     private bool _isRotating = false;
     private bool _isOpen = false;
     private Quaternion _originalRotation;
 
     private void Start()
     {
+        _audioSource= GetComponent<AudioSource>();
         _originalRotation = _doorHindge.transform.localRotation;
     }
 
@@ -26,8 +27,8 @@ public class Door : MonoBehaviour
     {
         if (_isRotating || _isOpen)
             return;
-
-        Quaternion targetRotation = Quaternion.Euler(_originalRotation.x, rotation, _originalRotation.z);
+        _audioSource.Play();
+        Quaternion targetRotation = Quaternion.Euler(_originalRotation.x, _originalRotation.y + rotation, _originalRotation.z);
         StartCoroutine(AnimateDoor(targetRotation, _openingTime));
     }
 

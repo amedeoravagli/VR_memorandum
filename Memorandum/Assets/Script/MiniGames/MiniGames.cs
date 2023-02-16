@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class MiniGames : Interactable
 {
@@ -12,23 +12,31 @@ public class MiniGames : Interactable
     [SerializeField] private ActionLauncher _actionLauncher;
     [SerializeField] private int _roomIndex = -1;
     [SerializeField] private Door _door;
+    [SerializeField] private AudioClip _audio_errore;
+    [SerializeField] private AudioClip _audio_sconfitta;
+    [SerializeField] private AudioClip _audio_vittoria;
+
+    //[SerializeField]
+    private AudioSource _audioSource;
 
     private int _indexTagVerified = 0;
     private int _numError = 0;
     private List<string> _cardTagsToTest = new List<string>();
-    public Action<int> GameWinEvent;
-
+    //public Action<int> GameWinEvent;
+    
     //private Highlight _highlight;
     private bool _isReady = false;
+   
     void Start()
     {
         //_highlight = GetComponent<Highlight>();
         //_actionLauncher = _actionLauncherGO.GetComponent<ActionLauncher>();
         AppState appstate = _actionLauncherGO.GetComponent<AppState>();
-        _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
-        this.GameWinEvent += OnGameWin;
+        _audioSource = _actionLauncherGO.GetComponent<AudioSource>();
+        //GameWinEvent += OnGameWin;
         if (_roomIndex == 0)
         {
+            _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
             AttachReadyEvent();
         }
     }
@@ -37,8 +45,6 @@ public class MiniGames : Interactable
     {
         Debug.Log("Minigioco " + _roomIndex + " in ascolto");
         _actionLauncher.TestIsReadyEvent += OnActionReadyReceived;
-       
-
     }
 
     public void DetachtReadyEvent()
@@ -48,23 +54,29 @@ public class MiniGames : Interactable
 
     private void OnActionReadyReceived(bool isReady)
     {
-        _isReady = isReady;
-        Debug.Log("IsReady Event launch: " + isReady);
-        //_highlight.ToggleHighlight(true, true);
-        //ToggleHighlight(true, true);
+        
+        AppState appstate = _actionLauncherGO.GetComponent<AppState>();
+        _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
+        if (appstate.GetRoomIndex() == _roomIndex)
+        {
+            _isReady = isReady;
+            Debug.Log("IsReady Event launch: " + isReady);
+            //ToggleHighlight(true, true);
+        }
+       
     }
 
     public override void Interact(GameObject caller)
     {
         AppState appstate = caller.GetComponent<AppState>();
         Debug.Log("Interazione con Minigioco: appstate è " + appstate.IsTest() + " _isReady " + _isReady);
-        if (!appstate.IsTest() && _isReady)
+        if (!appstate.IsTest() && appstate.GetRoomIndex() == _roomIndex && appstate.NumberCardtagLast() == 0)
         {
             //_highlight.ToggleHighlight(false, false);  
             //ToggleHighlight(false, false);  
-             
+            _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
             RandomizeTagsOnElement();
-            appstate.ChangeFase();
+            appstate.ChangePhase();
             GetComponent<BoxCollider>().enabled = false;
             MakeElementInteractive(true);
         }
@@ -93,7 +105,7 @@ public class MiniGames : Interactable
         }
         else
         {
-            Debug.Log("Numero di TestElement trovati: " + GetComponentsInChildren<TestElement>().Length+ " numCardTags: " + numCardTags);
+            Debug.Log("RoomIndex: "+_roomIndex +" Numero di TestElement trovati: " + GetComponentsInChildren<TestElement>().Length+ " numCardTags: " + numCardTags);
         }
         string tag = "";
         foreach (var element in GetComponentsInChildren<TestElement>())
@@ -109,27 +121,36 @@ public class MiniGames : Interactable
 
     private void Win()
     {
-        if ( GameWinEvent != null)
-        {
-            MakeElementInteractive(false);
-            _door.OpenDoor(-90);
-            DetachtReadyEvent();
-            GameWinEvent.Invoke(_roomIndex+1);
-        }
+        //if ( GameWinEvent != null)
+        //{
+        Debug.Log("Game win event stanza :" + _roomIndex);
+        _audioSource.PlayOneShot(_audio_vittoria);
+        MakeElementInteractive(false);
+
+        _door.OpenDoor(-90);
+        _actionLauncherGO.GetComponent<AppState>().OnWinAction(_roomIndex + 1);
+        //DetachtReadyEvent();
+      //  GameWinEvent.Invoke(_roomIndex+1);
+        //}
     }
 
     private void Lose()
     {
-        Debug.Log("Hai Perso Merda");
+        _audioSource.PlayOneShot(_audio_sconfitta);
+        SceneManager.LoadScene(6);//carico scena di sconfitta
+        Debug.Log("Hai Perso");
     }
 
-    private void OnGameWin(int newRoomIndex)
+   /* private void OnGameWin(int newRoomIndex)
     {
+        Debug.Log("Vittoria il nuovo indice è : " + newRoomIndex);
+        Debug.Log("la stanza " + _roomIndex + " riceve nuovo indice " + newRoomIndex);
         if(newRoomIndex == _roomIndex)
         {
+            Debug.Log("la stanza " + _roomIndex + " riceve nuovo indice " + newRoomIndex);
             AttachReadyEvent();
         }
-    }
+    }*/
 
     public void VerifyTags(string card_tag)
     {
@@ -137,11 +158,21 @@ public class MiniGames : Interactable
         Debug.Log("Indice da verificare: " + _indexTagVerified + " confronto card tag: " + card_tag);
         if(card_tag != _cardTagsToTest[_indexTagVerified])
         {
+            
+
             _numError++;
             _indexTagVerified = 0;
             if(_numError == 3)
             {
-                Lose();   
+                Lose();
+            }
+            else
+            {
+                if(_audio_errore == null)
+                {
+                    Debug.Log("");
+                }
+                _audioSource.PlayOneShot(_audio_errore);
             }
         }
         else
@@ -149,9 +180,12 @@ public class MiniGames : Interactable
             _indexTagVerified++;
             if(_indexTagVerified == _cardTagsToTest.Count)
             {
+                Debug.Log(" _indexTagVerified == _cardTagsToTest.Count Valore _indexTagVerified " + _indexTagVerified);
+                _indexTagVerified = 0;
                 Win();
             }
         }
+
     }
 
 

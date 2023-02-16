@@ -12,32 +12,29 @@ public class InitAppState : MonoBehaviour
     public Dictionary<int, List<string>> _cardList = new Dictionary<int, List<string>>();
     public bool isTutorial = false;
     [SerializeField] public int tagPerRoom = 5;
-    [SerializeField] public int numRooms = 1;
+    [SerializeField] public int numRooms = 4;
 
     // Start is called before the first frame update
     void OnEnable()
     {
         List<string> list;
         list = GetCardTagsFromFile("Assets/SrcWords/Words.txt");
-        int i = 0, k = 0;
-        
-        for(int j = 0; j < numRooms ; j++)
+        int i = 0;
+        _cardList.Add(0, list.GetRange(i, 3));
+        i = 3;
+        for (int j = 1; j < numRooms ; j++)
         {
-            if(j == 0)
+            _cardList.Add(j, list.GetRange(i, 5));
+            /*if ( k > list.Count-i)
             {
-                i = 0;
-                k = 2;
-            }
-            if ( k >= list.Count)
-            {
-                _cardList.Add(j, list.GetRange(i, list.Count-i));
-                numRooms = j+1;
+                _cardList.Add(j, list.GetRange(i, list.Count - i));
+                //numRooms = j+1;
                 break;
-            }
-            _cardList.Add(j, list.GetRange(i, 3));
+            }*/
+            //_cardList.Add(j, list.GetRange(i, k));
 
-            i += k-1; 
-            k = 5;
+            i += 5; 
+            //k = 5;
         }
         Debug.Log("InitAppState inizializzato");
         

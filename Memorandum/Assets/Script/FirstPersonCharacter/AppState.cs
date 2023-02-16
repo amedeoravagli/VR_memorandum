@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AppState : MonoBehaviour
 {
@@ -18,71 +19,68 @@ public class AppState : MonoBehaviour
     private Dictionary<int, List<string>> _available_cardtags = new Dictionary<int, List<string>>();
     private List<string> _binded_cardtags = new List<string>();
     private int _availableIndex = 0;
-    //private bool _isTutorial = false;
+    private bool _isTutorial = false;
     private bool _isTest = false;
-    private bool _isTestReady = false;
     //private int _bindedIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
         _actionLauncher = GetComponent<ActionLauncher>();
         _available_cardtags = init_app._cardList;
-        _winLauncher.GameWinEvent += OnWinAction;
+        Debug.Log("Appstate: numRoom = " + _available_cardtags.Count);
+        //_winLauncher.GameWinEvent += OnWinAction;
     }
-
 
     public List<string> GetTestRoomTags(int roomIndex)
     {
-        //List<string> tags = new List<string>(); 
-        /*for(int j = 0; j < roomIndex+1; j++)
-        {
-            tags.AddRange(_available_cardtags[j]);
-        }*/
         return _binded_cardtags;
     }
-
-
-    // Update is called once per frame
-    /* void Update()
-     {
-
-     }*/
-
-   /* public int GetRoomIndex()
+    
+    public int GetRoomIndex()
     {
         return _roomIndex;
     }
 
-    public bool IncrementRoomIndex()
+    public void SetRoomIndex(int newRoomIndex)
     {
-        _roomIndex++;
-        return _roomIndex < _available_cardtags.Count;
+        _roomIndex= newRoomIndex;   
     }
- */
 
+    public bool isTest() { return _isTest; }
 
     // Action Handler for finish the game
-
-    private void OnWinAction(int newRoomIndex)
+    public void OnWinAction(int newRoomIndex)
     {
-        if(newRoomIndex == _available_cardtags.Count || newRoomIndex == 7)
+        ChangePhase();
+        if (newRoomIndex == _available_cardtags.Count || newRoomIndex == 7)
         {
             Debug.Log("AppState riceve evento win con newRoomIndex = " + newRoomIndex);
             GoToGameMenu();
         }
+        _roomIndex = newRoomIndex;
+        Debug.Log(_roomIndex);
     }
 
     public void GoToGameMenu()
     {
-        return;
+        SceneManager.LoadScene(7); // carico scena vittoria
     }
 
-    public void ChangeFase()
+    public int NumberCardtagLast()
     {
+        return _available_cardtags[_roomIndex].Count;
+    }
+
+    public void ChangePhase()
+    {
+        _availableIndex = 0;
         _isTest = !_isTest;
     }
 
     public bool IsTest() { return _isTest; }
+
+    public bool IsTutorial() { return _isTutorial; }
+
     public string GetDetachableCardTag()
     {
         return _binded_cardtags[GetBindedIndex()];    
@@ -91,22 +89,17 @@ public class AppState : MonoBehaviour
     public string GetCardTag()
     {
         string data = "";
-        if (_available_cardtags[_roomIndex].Count > 0)
+        if (_available_cardtags[_roomIndex].Count > 0 && !_isTest)
         {
             data = _available_cardtags[_roomIndex][_availableIndex];
         }
         return data;
     }
 
-    public bool IsTestReady()
-    {
-        return _isTestReady;
-    }
-    
     public string BindCardTag()
     {
         string data = null;
-        if (_available_cardtags.Count > 0)
+        if (_available_cardtags[_roomIndex].Count > 0 && !_isTest)
         {
             data = GetCardTag();
             _binded_cardtags.Add(data);
@@ -133,7 +126,7 @@ public class AppState : MonoBehaviour
     {
         _actionLauncher.OnTestActivation(false);
         _available_cardtags[_roomIndex].Add(_binded_cardtags[GetBindedIndex()]);
-        _availableIndex = _available_cardtags.Count - 1;
+        _availableIndex = _available_cardtags[_roomIndex].Count - 1;
         _binded_cardtags.RemoveAt(GetBindedIndex());
         GetBindedIndex();
     }
@@ -162,8 +155,8 @@ public class AppState : MonoBehaviour
                 _availableIndex = _available_cardtags[_roomIndex].Count - 1;
             }
         }
-        if (_available_cardtags[_roomIndex].Count > 0)
-            Debug.Log(_availableIndex + " Parola Selezionata: " +  _available_cardtags[_roomIndex][_availableIndex]);
+        //if (_available_cardtags[_roomIndex].Count > 0)
+        //    Debug.Log(_availableIndex + " Parola Selezionata: " +  _available_cardtags[_roomIndex][_availableIndex]);
     }
 
     

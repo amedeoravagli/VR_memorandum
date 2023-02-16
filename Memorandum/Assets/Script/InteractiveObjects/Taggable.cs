@@ -13,19 +13,10 @@ public class Taggable : Interactable
 
     private void Start()
     {
-        _visualCardTag = this.GetComponentInChildren<TextMeshPro>();
+        _visualCardTag = GetComponentInChildren<TextMeshPro>();
         _target = Camera.main;
         //PositionigTMP();
     }
-
-    private void PositionigTMP()
-    {
-        Collider collider = this.GetComponent<Collider>();
-        Vector3 pos = collider.bounds.center;
-        //pos.y += 10;
-        _visualCardTag.transform.position = pos;
-    }
-
     public void DisableTMP()
     {
         if (_visualCardTag)
@@ -36,13 +27,13 @@ public class Taggable : Interactable
         if(_visualCardTag)_visualCardTag.text = "";
         else
         {
-            Debug.Log("EnableTMP(): _visualCardTag è NULLO");
+        //    Debug.Log("EnableTMP(): _visualCardTag è NULLO");
 
         }
         if (this.card_tag != null)
         {
             
-            _visualCardTag = this.GetComponentInChildren<TextMeshPro>();
+            _visualCardTag = GetComponentInChildren<TextMeshPro>();
             //Debug.Log("EnableTMP: " + _visualCardTag.name + " con card_tag: " + this.card_tag);
             if (_visualCardTag) { 
                 _visualCardTag.text = card_tag;
@@ -50,7 +41,7 @@ public class Taggable : Interactable
             }
             else
             {
-                Debug.Log("EnableTMP(): _visualCardTag è NULLO");
+            //    Debug.Log("EnableTMP(): _visualCardTag è NULLO");
 
             }
             
@@ -74,7 +65,7 @@ public class Taggable : Interactable
         }
         else
         {
-            Debug.Log("WatchTMP(): _visualCardTag è NULLO");
+        //    Debug.Log("WatchTMP(): _visualCardTag è NULLO");
         }
     }
 

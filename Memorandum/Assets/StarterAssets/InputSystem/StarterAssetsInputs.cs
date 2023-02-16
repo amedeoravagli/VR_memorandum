@@ -48,6 +48,7 @@ namespace StarterAssets
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{
+			GetComponent<AudioSource>().Play();
 			move = newMoveDirection;
 		} 
 

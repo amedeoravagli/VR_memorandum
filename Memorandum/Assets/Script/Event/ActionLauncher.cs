@@ -11,7 +11,7 @@ public class ActionLauncher : MonoBehaviour
     {
         if (TestIsReadyEvent != null)
         {
-            Debug.Log("Invio Test Activation event");
+            Debug.Log("INVIO EVENTO DI ATTIVAZIONE MINIGIOCO: Invio Test Activation event");
             TestIsReadyEvent.Invoke(isReady);
         }
     }
