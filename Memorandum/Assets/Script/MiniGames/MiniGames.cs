@@ -15,12 +15,14 @@ public class MiniGames : Interactable
     [SerializeField] private AudioClip _audio_errore;
     [SerializeField] private AudioClip _audio_sconfitta;
     [SerializeField] private AudioClip _audio_vittoria;
+    private bool _changeColor;
+    [SerializeField] private TextMeshPro errors_text;
 
     //[SerializeField]
     private AudioSource _audioSource;
 
     private int _indexTagVerified = 0;
-    private int _numError = 0;
+    private int _numError = 3;
     private List<string> _cardTagsToTest = new List<string>();
     //public Action<int> GameWinEvent;
     
@@ -37,8 +39,9 @@ public class MiniGames : Interactable
         if (_roomIndex == 0)
         {
             _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
-            AttachReadyEvent();
+            //AttachReadyEvent();
         }
+        AttachReadyEvent();
     }
 
     public void AttachReadyEvent()
@@ -50,6 +53,7 @@ public class MiniGames : Interactable
     public void DetachtReadyEvent()
     {
         _actionLauncher.TestIsReadyEvent -= OnActionReadyReceived;
+        errors_text.text = "";
     }
 
     private void OnActionReadyReceived(bool isReady)
@@ -59,8 +63,13 @@ public class MiniGames : Interactable
         _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
         if (appstate.GetRoomIndex() == _roomIndex)
         {
+            
             _isReady = isReady;
-            Debug.Log("IsReady Event launch: " + isReady);
+            if (isReady)
+            {
+                ToggleHighlight(true, true);
+            }
+            Debug.Log("IsReady Event launch: " + isReady + " Room index "+ _roomIndex);
             //ToggleHighlight(true, true);
         }
        
@@ -72,8 +81,8 @@ public class MiniGames : Interactable
         Debug.Log("Interazione con Minigioco: appstate è " + appstate.IsTest() + " _isReady " + _isReady);
         if (!appstate.IsTest() && appstate.GetRoomIndex() == _roomIndex && appstate.NumberCardtagLast() == 0)
         {
-            //_highlight.ToggleHighlight(false, false);  
-            //ToggleHighlight(false, false);  
+            errors_text.text = "Numero tentativi rimasti :" + _numError;
+            ToggleHighlight(false, true);
             _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
             RandomizeTagsOnElement();
             appstate.ChangePhase();
@@ -119,7 +128,7 @@ public class MiniGames : Interactable
         }
     }
 
-    private void Win()
+    public void Win()
     {
         //if ( GameWinEvent != null)
         //{
@@ -137,6 +146,10 @@ public class MiniGames : Interactable
     private void Lose()
     {
         _audioSource.PlayOneShot(_audio_sconfitta);
+        foreach (var text in GetComponentsInChildren<TextMeshPro>())
+        {
+            text.color = Color.red;
+        }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SceneManager.LoadScene(7);//carico scena di sconfitta
@@ -160,11 +173,14 @@ public class MiniGames : Interactable
         Debug.Log("Indice da verificare: " + _indexTagVerified + " confronto card tag: " + card_tag);
         if(card_tag != _cardTagsToTest[_indexTagVerified])
         {
-            
 
-            _numError++;
+            _changeColor = true;
+            _numError--;
+            errors_text.text = "Numero tentativi rimasti :" + _numError;
+            StartCoroutine(Timer());
+            
             _indexTagVerified = 0;
-            if(_numError == 3)
+            if(_numError == 0)
             {
                 Lose();
             }
@@ -179,6 +195,7 @@ public class MiniGames : Interactable
         }
         else
         {
+            _changeColor = false;
             _indexTagVerified++;
             if(_indexTagVerified == _cardTagsToTest.Count)
             {
@@ -190,7 +207,27 @@ public class MiniGames : Interactable
 
     }
 
+    public bool getChangeColor()
+    {
+        return _changeColor;
+    }
 
+    //creo una courite
+    public IEnumerator Timer()
+    {
+        // courutineStarted = true;
+        yield return new WaitForSeconds(1.5f);
+        changeColorInWhite();
+        // courutineStarted = false;
+    }
+
+    private void changeColorInWhite()
+    {
+        foreach (var text in GetComponentsInChildren<TextMeshPro>())
+        {
+            text.color = Color.white;
+        }
+    }
 
     // Start is called before the first frame update
     /*void Start()

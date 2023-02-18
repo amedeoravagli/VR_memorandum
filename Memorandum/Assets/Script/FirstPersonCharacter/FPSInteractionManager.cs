@@ -53,7 +53,7 @@ public class FPSInteractionManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.K))
         {
             //se rilasciamo il tasto esc andiamo in pausa
-            _appstate.OnWinAction(7);
+            _appstate.OnWinAction(_appstate.GetRoomIndex()+1);
         }
         if (_debugRay)
             DebugRaycast();
@@ -137,9 +137,9 @@ public class FPSInteractionManager : MonoBehaviour
                         if (_pointingInteractable)
                         {
                             //_pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
-                            _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false, false);
+                            _pointingInteractable.GetComponent<Highlight>().ToggleHighlight(false, false);
                         }
-                        _pointing.GetComponent<Highlight>()?.ToggleHighlight(true, false);
+                        _pointing.GetComponent<Highlight>().ToggleHighlight(true, false);
                     }
                 }
 
@@ -160,7 +160,25 @@ public class FPSInteractionManager : MonoBehaviour
                     if (_pointingTaggable && !_appstate.IsTest())
                         _pointingTaggable.EnableTMP();
                 }
-                
+
+                if (Input.GetMouseButtonDown(1))
+                {
+
+                    //_pointingInteractable.Interact(gameObject);
+                    if (_pointing.GetComponent<TestElement>() != null) //
+                    {
+                        _audioSource.PlayOneShot(_audio_selezione);
+                        _pointing.GetComponent<TestElement>().superaTest(gameObject);
+                    }
+                    //else if (_pointing.GetComponent<Taggable>() != null)
+                    //{
+                    //    _audioSource.PlayOneShot(_audio_associazione);
+
+                    //}
+                    //if (_pointingTaggable && !_appstate.IsTest())
+                    //    _pointingTaggable.EnableTMP();
+                }
+
             }
             else if (_pointingInteractable) // se inquadro qualcodisabilito l'ultimo testo mostrato
             {

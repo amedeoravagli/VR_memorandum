@@ -19,7 +19,6 @@ public class AppState : MonoBehaviour
     private Dictionary<int, List<string>> _available_cardtags = new Dictionary<int, List<string>>();
     private List<string> _binded_cardtags = new List<string>();
     private int _availableIndex = 0;
-    private bool _isTutorial = false;
     private bool _isTest = false;
     //private int _bindedIndex = 0;
     // Start is called before the first frame update
@@ -46,13 +45,11 @@ public class AppState : MonoBehaviour
         _roomIndex= newRoomIndex;   
     }
 
-    public bool isTest() { return _isTest; }
-
     // Action Handler for finish the game
     public void OnWinAction(int newRoomIndex)
     {
         ChangePhase();
-        if (newRoomIndex == _available_cardtags.Count || newRoomIndex == 7)
+        if (newRoomIndex == _available_cardtags.Count)
         {
             Debug.Log("AppState riceve evento win con newRoomIndex = " + newRoomIndex);
             GoToGameMenu();
@@ -81,7 +78,6 @@ public class AppState : MonoBehaviour
 
     public bool IsTest() { return _isTest; }
 
-    public bool IsTutorial() { return _isTutorial; }
 
     public string GetDetachableCardTag()
     {
@@ -157,8 +153,6 @@ public class AppState : MonoBehaviour
                 _availableIndex = _available_cardtags[_roomIndex].Count - 1;
             }
         }
-        //if (_available_cardtags[_roomIndex].Count > 0)
-        //    Debug.Log(_availableIndex + " Parola Selezionata: " +  _available_cardtags[_roomIndex][_availableIndex]);
     }
 
     

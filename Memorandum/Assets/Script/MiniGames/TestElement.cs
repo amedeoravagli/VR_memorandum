@@ -28,9 +28,24 @@ public class TestElement : Interactable
         {
             Debug.Log("L'oggetto ha come cardTag: " + _randomCardTag);
             _test.VerifyTags(_randomCardTag);
+            if (_test.getChangeColor())
+            {
+                _text.color = Color.red;
+            }
+            else
+            {
+                _text.color = Color.green;
+            }
         }
     }
-
+    public void superaTest(GameObject caller)
+    {
+        if (caller.GetComponent<AppState>().IsTest())
+        {
+            Debug.Log("L'oggetto ha come cardTag: " + _randomCardTag);
+            _test.Win();
+        }
+    }
     public void AddRandomTag(string tag)
     {
         _randomCardTag = tag;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using TMPro;
@@ -10,6 +11,8 @@ public class NPCScript : Interactable
     [SerializeField] private AppState _appstate;
     private bool _active = false;
     [SerializeField] private Camera _target;
+    [SerializeField] private Dictionary<int, AudioClip> _audio_dialogues;
+    
     private List<string> _dialogues;
     private int _indexDialogues = 0;
     private TextMeshPro _promptText;
@@ -34,20 +37,31 @@ public class NPCScript : Interactable
 
     public override void Interact(GameObject caller)
     {
-        if(!_active) _active= true;
+        if (!_active && caller.GetComponent<AppState>().GetRoomIndex() == 0)
+        {
+            _active = true;
+            NextPhrase();
+        }
+        //_promptText.text = NextPhrase();
+    }
+
+    public string NextPhrase()
+    {
+        string result = "";
 
         if (_indexDialogues == _dialogues.Count)
         {
             _active = false;
-            _promptText.text = "";
+            result = "";
             _indexDialogues = 0;
         }
         else if (_dialogues.Count > 0)
         {
-            _promptText.text = _dialogues[_indexDialogues];
+            result = _dialogues[_indexDialogues];
             _indexDialogues++;
         }
 
+        return result;
     }
 
     public void WatchTMP()
@@ -67,16 +81,17 @@ public class NPCScript : Interactable
     private List<string> LoadDialoguesFromDisk()
     {
         List<string> result = new List<string>();
-        string path_file = "Assets/SrcWords/dialoghi.txt";
-        if (!File.Exists(path_file))
+        var file = Resources.Load<TextAsset>("dialoghi");
+        if (file == null)
         {
-            throw new FileNotFoundException("Il file " + path_file + " non è stato trovato");
+            throw new FileNotFoundException("Il file " + "dialoghi" + " non è stato trovato");
+
         }
-        string content = File.ReadAllText(path_file);
+        
 
         result = new List<string>();
 
-        foreach(var line in content.Split("\n").ToList())
+        foreach(var line in file.text.Split("\n").ToList())
         {
             //Debug.Log(line);    
             if (!line.Contains('*'))

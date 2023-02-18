@@ -7,13 +7,13 @@ using UnityEngine;
 
 public class Taggable : Interactable
 {
-
-    private TextMeshPro _visualCardTag;
+    //private string card_tag = null;
+    private TMP_Text _visualCardTag;
     private Camera _target;
 
     private void Start()
     {
-        _visualCardTag = GetComponentInChildren<TextMeshPro>();
+        _visualCardTag = GetComponentInChildren<TMP_Text>(true);
         _target = FindObjectOfType<Camera>();
         //PositionigTMP();
     }
@@ -24,7 +24,7 @@ public class Taggable : Interactable
     }
     public void EnableTMP()
     {
-        if(_visualCardTag)_visualCardTag.text = "";
+        if(_visualCardTag != null)_visualCardTag.text = "";
         else
         {
         //    Debug.Log("EnableTMP(): _visualCardTag è NULLO");
@@ -33,7 +33,7 @@ public class Taggable : Interactable
         if (this.card_tag != null)
         {
             
-            _visualCardTag = GetComponentInChildren<TextMeshPro>();
+            //_visualCardTag = GetComponentInChildren<TMP_Text>();
             //Debug.Log("EnableTMP: " + _visualCardTag.name + " con card_tag: " + this.card_tag);
             if (_visualCardTag) { 
                 _visualCardTag.text = card_tag;
@@ -53,7 +53,7 @@ public class Taggable : Interactable
         if (_visualCardTag)
         {
             //Debug.Log("Sto guardando: " + this.card_tag);
-            if(this.card_tag != null )GetComponentInChildren<TextMeshPro>().text =  this.card_tag;
+            if(this.card_tag != null )GetComponentInChildren<TMP_Text>().text =  this.card_tag;
             Vector3 targetDirection = _target.transform.position - _visualCardTag.transform.position;
             targetDirection.y = 0f;
             targetDirection.Normalize();

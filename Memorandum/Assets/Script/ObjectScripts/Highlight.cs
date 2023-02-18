@@ -13,73 +13,64 @@ public class Highlight : MonoBehaviour
     private Color color = Color.white;
 
     //helper list to cache all the materials ofd this object
-    private List<Material> materials;
+    
     private float _rgb = 0f;
+    private bool _enabledFade = false;  
     //private List<bool> emission = new List<bool>();
     //Gets all the materials from each renderer
-    private void Awake()
-    {
-        materials = new List<Material>();
-        foreach (var renderer in renderers)
-        {
-            //A single child-object might have mutliple materials on it
-            //that is why we need to all materials with "s"
-            materials.AddRange(new List<Material>(renderer.materials));
-            //emission.Add(false);
-        }
-    }
+   
 
-    IEnumerator Fade(Material material) // coroutine per l'animazione di lampeggio
+    IEnumerator Fade() // coroutine per l'animazione di lampeggio
     {
-        Color c = material.GetColor("_EmissionColor");
-        
-        c.a = 1f; 
-        float inc = 1f;
-        _rgb = 0f;
-        float r , g , b ;
-        while (true)
-        {
-            //_rgb += inc;//(inc * Time.deltaTime) ;
-            //_rgb %= 256;
-            
-            r = c.r * _rgb;
-            g = c.g * _rgb;
-            b = c.b * _rgb;
-            
-            material.SetColor("_EmissionColor", new Color(r,g,b));
-            
-            if (_rgb+inc < 0 || _rgb+inc >= 256)
-                inc = -inc;
-            _rgb += inc;
-            yield return new WaitForSeconds(1f);
-        }
-    }
 
-    /*protected void EmissionFaded()
-    {
-        int i = 0;
-        float inc = 10f;
-        foreach (var material in materials)
+        Color c = Color.black;
+        float inc = 0.01f;
+        _rgb = 0.1f;
+        while (_enabledFade)
         {
-            if (!emission[i])
-            {
-                material.EnableKeyword("_EMISSION");
-                emission[i] = true;
-            }
-            Color c = material.GetColor("_EmissionColor");
+
             c.r = _rgb;
             c.g = _rgb;
             c.b = _rgb;
-
-            material.SetColor("_EmissionColor", c);
-
-            if (_rgb + inc <= -1 || _rgb + inc >= 256)
-                inc = -inc;
-            _rgb += inc;
             
-            i++;
+            for (int i = 0; i < renderers.Count; i++)
+            {
+                for (int j = 0; j < renderers[i].materials.Length; j++)
+                {
+                    renderers[i].materials[j].SetColor("_EmissionColor", c);
+                }
+            }
+            
+            if (_rgb+inc < 0 || _rgb+inc > 1)
+                inc = -inc;
+            if (_rgb + inc < 0.2 && _rgb + inc > 0.0)
+            { 
+                if (inc > 0)
+                {
+                    inc = 0.005f;
+                }
+                else
+                {
+                    inc = -0.005f;
+                }
+            }
+            if( _rgb + inc > 0.8 && _rgb + inc < 1.0)
+            {
+                if (inc > 0)
+                {
+                    inc = 0.005f;
+                }
+                else
+                {
+                    inc = -0.005f;
+                }
+            }
+            _rgb += inc;
+            yield return new WaitForSeconds(0.01f);
         }
-    }*/
+    }
+
+
 
     public void ToggleHighlight(bool val, bool isTestObject)
     {
@@ -87,38 +78,37 @@ public class Highlight : MonoBehaviour
         {
             if (!isTestObject)
             {
-                foreach (var material in materials)
-                {
 
-                    //We need to enable the EMISSION
-                    material.EnableKeyword("_EMISSION");
-                    //before we can set the color
-                    material.SetColor("_EmissionColor", color);
+                for(int  i = 0; i < renderers.Count; i++)
+                {
+                    for (int j = 0; j < renderers[i].materials.Length; j++)
+                    {
+                        renderers[i].materials[j].SetColor("_EmissionColor", color);
+                    }
                 }
+            
             }
             else
             {
-                foreach (var material in materials)
-                {
-                    material.EnableKeyword("_EMISSION");
-                    StartCoroutine(Fade(material));
-                }
+                _enabledFade = true;
+                StartCoroutine(Fade());
             }
             
         }
         else
         {
-            //int i = 0;
-            foreach (var material in materials)
+
+            if (isTestObject)
             {
-                if(isTestObject) {
-                    StopCoroutine(Fade(material));
+                _enabledFade = false;
+                StopCoroutine(Fade());
+            }
+            for (int i = 0; i < renderers.Count; i++)
+            {
+                for (int j = 0; j < renderers[i].materials.Length; j++)
+                {
+                    renderers[i].materials[j].SetColor("_EmissionColor", Color.black);
                 }
-                //we can just disable the EMISSION
-                //if we don't use emission color anywhere else
-                material.DisableKeyword("_EMISSION");
-                //emission[i] = false;
-                //i++;
             }
         }
     }
