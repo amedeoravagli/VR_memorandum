@@ -12,7 +12,7 @@ public class AppState : MonoBehaviour
 
     [SerializeField] private InitAppState init_app;
     [SerializeField] private MiniGames _winLauncher;
-
+    [SerializeField] private NPCScript _npc;
     private ActionLauncher _actionLauncher;
     //private InitAppState _init_app;
     private int _roomIndex = 0;
@@ -40,6 +40,11 @@ public class AppState : MonoBehaviour
         return _roomIndex;
     }
 
+    public int GetNumRoom()
+    {
+        return _available_cardtags.Count;
+    }
+
     public void SetRoomIndex(int newRoomIndex)
     {
         _roomIndex= newRoomIndex;   
@@ -52,8 +57,15 @@ public class AppState : MonoBehaviour
         if (newRoomIndex == _available_cardtags.Count)
         {
             Debug.Log("AppState riceve evento win con newRoomIndex = " + newRoomIndex);
-            GoToGameMenu();
+            _npc.FinishGame();
+            //GoToGameMenu();
         }
+        
+        if (_roomIndex == 0)
+        {
+            _npc.WinMiniGame();
+        }
+
         _roomIndex = newRoomIndex;
         Debug.Log(_roomIndex);
     }
@@ -62,7 +74,7 @@ public class AppState : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        SceneManager.LoadScene(6); // carico scena vittoria
+        SceneManager.LoadScene(2); // carico scena vittoria
     }
 
     public int NumberCardtagLast()
@@ -87,7 +99,7 @@ public class AppState : MonoBehaviour
     public string GetCardTag()
     {
         string data = "";
-        if (_available_cardtags[_roomIndex].Count > 0 && !_isTest)
+        if (_roomIndex < _available_cardtags.Count && _available_cardtags[_roomIndex].Count > 0 && !_isTest)
         {
             data = _available_cardtags[_roomIndex][_availableIndex];
         }

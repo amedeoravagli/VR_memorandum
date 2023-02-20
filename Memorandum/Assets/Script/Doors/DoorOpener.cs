@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorOpener : Interactable
 {
@@ -16,7 +17,7 @@ public class DoorOpener : Interactable
     
     public override void Interact(GameObject caller)
     {
-        /*
+        
         _interactableCollider.enabled = false;
 
         Vector3 othersPositionRelativeToDoor = (caller.transform.position - transform.position).normalized;
@@ -28,7 +29,9 @@ public class DoorOpener : Interactable
 
         if (_door != null)
             _door.OpenDoor(doorRotation);
-        */
+
+        SceneManager.LoadScene(0);
+        
     }
 
     private void OnDoorClosed()

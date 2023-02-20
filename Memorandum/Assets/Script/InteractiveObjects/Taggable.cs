@@ -17,12 +17,24 @@ public class Taggable : Interactable
         _target = FindObjectOfType<Camera>();
         //PositionigTMP();
     }
-    public void DisableTMP()
+
+    private void OnTestActiveEvent(bool isTest)
+    {
+        if (isTest)
+        _visualCardTag.text = "";
+        else
+        {
+            //if(card_tag!= null)
+            _visualCardTag.text = this.card_tag;
+        }
+    }
+
+    /*public void DisableTMP()
     {
         if (_visualCardTag)
             _visualCardTag.text = "";
-    }
-    public void EnableTMP()
+    }*/
+    /*public void EnableTMP()
     {
         if(_visualCardTag != null)_visualCardTag.text = "";
         else
@@ -47,8 +59,8 @@ public class Taggable : Interactable
             
 
         }
-    }
-    public void WatchTMP()
+    }*/
+   /* public void WatchTMP()
     {
         if (_visualCardTag)
         {
@@ -67,7 +79,7 @@ public class Taggable : Interactable
         {
         //    Debug.Log("WatchTMP(): _visualCardTag è NULLO");
         }
-    }
+    }*/
 
     public override void Interact(GameObject caller)
     {  
@@ -78,6 +90,7 @@ public class Taggable : Interactable
             {
                 this.card_tag = appstate.BindCardTag();
                 _visualCardTag.text = this.card_tag;
+                caller.GetComponent<ActionLauncher>().StatusIsTestEvent += OnTestActiveEvent;
             }
             else
             {
@@ -86,6 +99,8 @@ public class Taggable : Interactable
                     appstate.UnbindCardTag();
                     this.card_tag = null;
                     _visualCardTag.text = "";
+                    caller.GetComponent<ActionLauncher>().StatusIsTestEvent -= OnTestActiveEvent;
+
                 }
 
             }

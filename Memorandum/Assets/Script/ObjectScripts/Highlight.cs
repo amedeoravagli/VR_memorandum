@@ -16,6 +16,8 @@ public class Highlight : MonoBehaviour
     
     private float _rgb = 0f;
     private bool _enabledFade = false;  
+    private float _freq = 1f;
+    private float _amp = 0.5f;
     //private List<bool> emission = new List<bool>();
     //Gets all the materials from each renderer
    
@@ -24,7 +26,7 @@ public class Highlight : MonoBehaviour
     {
 
         Color c = Color.black;
-        float inc = 0.01f;
+        //float inc = 0.01f;
         _rgb = 0.1f;
         while (_enabledFade)
         {
@@ -40,8 +42,8 @@ public class Highlight : MonoBehaviour
                     renderers[i].materials[j].SetColor("_EmissionColor", c);
                 }
             }
-            
-            if (_rgb+inc < 0 || _rgb+inc > 1)
+            _rgb = (Mathf.Sin(Time.time * _freq) * _amp)+_amp+0.01f;
+            /*if (_rgb+inc < 0 || _rgb+inc > 1)
                 inc = -inc;
             if (_rgb + inc < 0.2 && _rgb + inc > 0.0)
             { 
@@ -65,8 +67,8 @@ public class Highlight : MonoBehaviour
                     inc = -0.005f;
                 }
             }
-            _rgb += inc;
-            yield return new WaitForSeconds(0.01f);
+            _rgb += inc;*/
+            yield return null;//new WaitForSeconds(0.01f);
         }
     }
 

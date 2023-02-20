@@ -10,7 +10,7 @@ using NUnit.Framework;
 public class InitAppState : MonoBehaviour
 {
     public Dictionary<int, List<string>> _cardList = new Dictionary<int, List<string>>();
-    public bool isTutorial = false;
+    //public bool isTutorial = false;
     [SerializeField] public int tagPerRoom = 5;
     [SerializeField] public int numRooms = 3;
 
@@ -18,9 +18,11 @@ public class InitAppState : MonoBehaviour
     void OnEnable()
     {
         List<string> list;
-        list = GetCardTagsFromFile("Words");
+        list = GetLinesFromFile("Words");
         List<int> indexTaken = new List<int>();
-        for(int j = 0; j < ((numRooms-1)*tagPerRoom)+3; j++)
+        Debug.Log("((numRooms-1)*tagPerRoom)+3 = " + ((numRooms - 1) * tagPerRoom) + 3);
+
+        for(int j = 0; j < ((numRooms - 1) * tagPerRoom) + 3; j++)
         {
             int index = Random.Range(0, list.Count);
             while (indexTaken.Contains(index) && indexTaken.Count != 0)
@@ -34,7 +36,9 @@ public class InitAppState : MonoBehaviour
             }
             else if ((j-3)%5 == 0)
             {
-                int a = (j - 3) / 5 + 1;
+                int a = ((j - 3) / 5) + 1;
+                Debug.Log("j = " + j + " a = " + a);
+
                 _cardList.Add(a, new List<string>());
             }
             _cardList[_cardList.Count - 1].Add(list[indexTaken.Last()]);
@@ -63,7 +67,7 @@ public class InitAppState : MonoBehaviour
         
     }
 
-    private List<string> GetCardTagsFromFile(string path_file)
+    static public List<string> GetLinesFromFile(string path_file)
     {   
         
         var file = Resources.Load<TextAsset>(path_file);

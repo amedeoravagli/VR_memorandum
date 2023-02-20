@@ -9,20 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: d2b10359fda343540bb3b97c9c43d910
   - enabled: 1
-    path: Assets/Scenes/MenuStart.unity
-    guid: afb1ab16effdea84b9c766bf5a5712c0
-  - enabled: 1
     path: Assets/Scenes/SharedScene.unity
     guid: ec2cd445f61b6ec48a9870a39ed6896a
-  - enabled: 1
-    path: Assets/Scenes/Comandi.unity
-    guid: 5e0989293aa45a746870b6c6e1a414ef
-  - enabled: 1
-    path: Assets/Scenes/Crediti.unity
-    guid: fe71e9791351a364da05307d625a37f0
-  - enabled: 1
-    path: Assets/Scenes/Info.unity
-    guid: 26c19a284d2170f47ac5a213ec9f5e4c
   - enabled: 1
     path: Assets/Scenes/Vittoria.unity
     guid: 2fe5e32c66740504092374ac663a3bac

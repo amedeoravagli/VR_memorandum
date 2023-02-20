@@ -6,6 +6,7 @@ using UnityEngine;
 public class ActionLauncher : MonoBehaviour
 {
     public Action<bool> TestIsReadyEvent;
+    public Action<bool> StatusIsTestEvent;
 
     public void OnTestActivation(bool isReady)
     {
@@ -13,6 +14,15 @@ public class ActionLauncher : MonoBehaviour
         {
             Debug.Log("INVIO EVENTO DI ATTIVAZIONE MINIGIOCO: Invio Test Activation event");
             TestIsReadyEvent.Invoke(isReady);
+        }
+    }
+
+    public void OnStatusIsTest(bool isTest)
+    {
+        if (StatusIsTestEvent != null)
+        {
+            Debug.Log("INVIO EVENTO DI INIZIO TEST: Invio isTest event");
+            StatusIsTestEvent.Invoke(isTest);
         }
     }
 

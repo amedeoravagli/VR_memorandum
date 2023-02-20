@@ -81,6 +81,7 @@ public class MiniGames : Interactable
         Debug.Log("Interazione con Minigioco: appstate è " + appstate.IsTest() + " _isReady " + _isReady);
         if (!appstate.IsTest() && appstate.GetRoomIndex() == _roomIndex && appstate.NumberCardtagLast() == 0)
         {
+            _actionLauncher.OnStatusIsTest(true);
             errors_text.text = "Numero tentativi rimasti :" + _numError;
             ToggleHighlight(false, true);
             _cardTagsToTest = appstate.GetTestRoomTags(_roomIndex);
@@ -137,6 +138,7 @@ public class MiniGames : Interactable
         MakeElementInteractive(false);
 
         _door.OpenDoor(-90);
+        _actionLauncher.OnStatusIsTest(false);
         _actionLauncherGO.GetComponent<AppState>().OnWinAction(_roomIndex + 1);
         //DetachtReadyEvent();
       //  GameWinEvent.Invoke(_roomIndex+1);
@@ -146,13 +148,14 @@ public class MiniGames : Interactable
     private void Lose()
     {
         _audioSource.PlayOneShot(_audio_sconfitta);
+        //_actionLauncher.OnStatusIsTest(false);
         foreach (var text in GetComponentsInChildren<TextMeshPro>())
         {
             text.color = Color.red;
         }
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        SceneManager.LoadScene(7);//carico scena di sconfitta
+        SceneManager.LoadScene(3);//carico scena di sconfitta
         Debug.Log("Hai Perso");
     }
 

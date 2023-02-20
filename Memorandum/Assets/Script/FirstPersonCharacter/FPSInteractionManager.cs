@@ -23,6 +23,8 @@ public class FPSInteractionManager : MonoBehaviour
 
     bool isPaused;
     public GameObject pnlPause;
+    public GameObject canvas;
+
 
     [SerializeField] private AudioClip _audio_associazione;
     [SerializeField] private AudioClip _audio_selezione;
@@ -50,11 +52,7 @@ public class FPSInteractionManager : MonoBehaviour
             //se rilasciamo il tasto esc andiamo in pausa
             ChangePauseStatus();
         }
-        if (Input.GetKeyUp(KeyCode.K))
-        {
-            //se rilasciamo il tasto esc andiamo in pausa
-            _appstate.OnWinAction(_appstate.GetRoomIndex()+1);
-        }
+        
         if (_debugRay)
             DebugRaycast();
     }
@@ -79,6 +77,7 @@ public class FPSInteractionManager : MonoBehaviour
 
         }
         pnlPause.SetActive(isPaused);
+        canvas.SetActive(!isPaused);
         //GetComponent<UnityStandardAssets.character.FirstPerson.RigidbodyFirstPersonController>().mouseLook.SetCursorLock(isPaused);
         if (!isPaused)
         {
@@ -120,20 +119,20 @@ public class FPSInteractionManager : MonoBehaviour
             Interactable _pointing = hit.transform.GetComponent<Interactable>();
             if (_pointing)
             {
-                if (_pointingInteractable && _pointingInteractable.name != _pointing.name)
+                /*if (_pointingInteractable && _pointingInteractable.name != _pointing.name)
                 {
                     _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
-                }
+                }*/
 
                 Taggable _pointingTaggable = _pointing.GetComponent<Taggable>();
 
                 if (_pointingTaggable && !GetComponent<AppState>().IsTest())
                 {
-                    _pointingTaggable.WatchTMP();
+                    //_pointingTaggable.WatchTMP();
 
                     if (_pointing != _pointingInteractable)
                     {
-                        _pointingTaggable.EnableTMP();
+                        //_pointingTaggable.EnableTMP();
                         if (_pointingInteractable)
                         {
                             //_pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
@@ -157,8 +156,8 @@ public class FPSInteractionManager : MonoBehaviour
                         _audioSource.PlayOneShot(_audio_associazione);
 
                     }
-                    if (_pointingTaggable && !_appstate.IsTest())
-                        _pointingTaggable.EnableTMP();
+                    /*if (_pointingTaggable && !_appstate.IsTest())
+                        _pointingTaggable.EnableTMP();*/
                 }
 
                 if (Input.GetMouseButtonDown(1))
@@ -180,10 +179,10 @@ public class FPSInteractionManager : MonoBehaviour
                 }
 
             }
-            else if (_pointingInteractable) // se inquadro qualcodisabilito l'ultimo testo mostrato
+            /*else if (_pointingInteractable) // se inquadro qualcodisabilito l'ultimo testo mostrato
             {
                 _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
-            }
+            }*/
 
             
 
@@ -194,7 +193,7 @@ public class FPSInteractionManager : MonoBehaviour
             if(_pointingInteractable != null && _pointingInteractable.GetComponent<Taggable>())
             {   
                 _pointingInteractable.GetComponent<Highlight>()?.ToggleHighlight(false,false);
-                _pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
+                //_pointingInteractable.GetComponent<Taggable>()?.DisableTMP();
 
             }
             _pointingInteractable = null;
