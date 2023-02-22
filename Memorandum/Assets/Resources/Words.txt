@@ -1,7 +1,7 @@
-Carota
-Melone
-Cerbiatto
-Computer
+carota
+melone
+cerbiatto
+computer
 abbandonare
 abbastanza
 abitare

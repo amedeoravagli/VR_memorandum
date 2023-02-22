@@ -184,7 +184,7 @@ MonoBehaviour:
   _comandi: {fileID: 950361732}
   _crediti: {fileID: 1601136983}
   _info: {fileID: 250416168}
-  _music: {fileID: 8300000, guid: ec5294ba62d13a649961994985142134, type: 3}
+  _music: {fileID: 8300000, guid: 4dd747c10d2bb0f41963af2879c96eb0, type: 3}
 --- !u!114 &184097900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,7 +1427,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f61281ed1e090914baf465e698a1f7bb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1637bf0c3188821438e88a79b654a49e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2934,6 +2934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1681784262}
   - component: {fileID: 1681784261}
+  - component: {fileID: 1681784263}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3018,6 +3019,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1681784263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681784260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &1808857689
 GameObject:
   m_ObjectHideFlags: 0

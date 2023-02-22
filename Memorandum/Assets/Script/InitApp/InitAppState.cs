@@ -20,6 +20,10 @@ public class InitAppState : MonoBehaviour
         List<string> list;
         list = GetLinesFromFile("Words");
         List<int> indexTaken = new List<int>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         Debug.Log("((numRooms-1)*tagPerRoom)+3 = " + ((numRooms - 1) * tagPerRoom) + 3);
 
         for(int j = 0; j < ((numRooms - 1) * tagPerRoom) + 3; j++)

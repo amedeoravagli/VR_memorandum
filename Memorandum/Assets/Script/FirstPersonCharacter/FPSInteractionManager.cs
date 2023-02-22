@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using StarterAssets;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 //using UnityEditor.Experimental.GraphView;
 
 public class FPSInteractionManager : MonoBehaviour
@@ -24,10 +25,12 @@ public class FPSInteractionManager : MonoBehaviour
     bool isPaused;
     public GameObject pnlPause;
     public GameObject canvas;
+    [SerializeField] private List<AudioSource> _listAudioSource;
 
 
     [SerializeField] private AudioClip _audio_associazione;
     [SerializeField] private AudioClip _audio_selezione;
+    [SerializeField] private AudioClip _audio_Menu;
     //private Taggable _taggedObject = null;
 
     // Start is called before the first frame update
@@ -51,6 +54,21 @@ public class FPSInteractionManager : MonoBehaviour
         {
             //se rilasciamo il tasto esc andiamo in pausa
             ChangePauseStatus();
+            if (isPaused)
+            {
+                foreach (var source in _listAudioSource)
+                {
+                    source.Pause();
+                }
+                _audioSource.PlayOneShot(_audio_Menu);
+            }
+            else
+            {
+                foreach (var source in _listAudioSource)
+                {
+                    source.Play();
+                }
+            }
         }
         
         if (_debugRay)

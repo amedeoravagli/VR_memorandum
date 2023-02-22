@@ -1,0 +1,1499 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'it' Physical Memory: 16281 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Editor\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/Polito/Realtà Virtuale/Github/Memorandum
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+49866
+Successfully changed project path to: D:/Polito/Realtà Virtuale/Github/Memorandum
+D:/Polito/Realtà Virtuale/Github/Memorandum
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 208.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path D:/Unity/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Polito/Realtà Virtuale/Github/Memorandum/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon (TM) 530 (ID=0x6900)
+    Vendor:   ATI
+    VRAM:     4086 MB
+    Driver:   27.20.20912.1002
+Initialize mono
+Mono path[0] = 'D:/Unity/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005565 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 181.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1047ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (774ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (473ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (181ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009907 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 169.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  9.080 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9082ms)
+		BeginReloadAssembly (200ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (8612ms)
+			LoadAssemblies (5189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1041ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (2218ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (169ms)
+				BeforeProcessingInitializeOnLoad (258ms)
+				ProcessInitializeOnLoadAttributes (638ms)
+				ProcessInitializeOnLoadMethodAttributes (1140ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5714 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (0.8 MB). Loaded Objects now: 6167.
+Memory consumption went from 227.2 MB to 226.4 MB.
+Total: 5.703000 ms (FindLiveObjects: 0.650000 ms CreateObjectMapping: 0.541900 ms MarkObjects: 4.073800 ms  DeleteObjects: 0.436200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4730.433257 seconds.
+  path: Assets/Models/camera_da_letto/comodini/scatola_comodino/scatola.fbx
+  artifactKey: Guid(f1242bb70b6ff1447a699d454f9b62c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodini/scatola_comodino/scatola.fbx using Guid(f1242bb70b6ff1447a699d454f9b62c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635e0983e97eefffc6336a9a74bdb119') in 0.443150 seconds 
+========================================================================
+Received Prepare
+Switching render pipeline c7062852108fb2c4eb61e218d479df12 -> 00000000000000000000000000000000
+Refreshing native plugins compatible for Editor in 8.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 30 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.8 MB). Loaded Objects now: 6259.
+Memory consumption went from 112.3 MB to 111.5 MB.
+Total: 55.144900 ms (FindLiveObjects: 1.760400 ms CreateObjectMapping: 0.505400 ms MarkObjects: 52.470300 ms  DeleteObjects: 0.407600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4061.402287 seconds.
+  path: Assets/URP Scene/Lightmap-0_comp_dir.png
+  artifactKey: Guid(cfc6b17f8874ec34aa5c9302b7bef43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP Scene/Lightmap-0_comp_dir.png using Guid(cfc6b17f8874ec34aa5c9302b7bef43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb6121f689c23140ff861b9ac60957e') in 0.128392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/URP Scene/ReflectionProbe-0.exr
+  artifactKey: Guid(d96b42b68cffa8c4594e95f2de001242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP Scene/ReflectionProbe-0.exr using Guid(d96b42b68cffa8c4594e95f2de001242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c333c6cb10e3674c962c2be2128a09') in 0.067060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.665568 seconds.
+  path: Assets/Scenes/shared URP_Renderer.asset
+  artifactKey: Guid(491e449996d267a438d2a7442df3a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/shared URP_Renderer.asset using Guid(491e449996d267a438d2a7442df3a166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a79b513b65890a7c398b3ac55c3f44') in 0.020594 seconds 
+========================================================================
+Received Prepare
+Switching render pipeline c7062852108fb2c4eb61e218d479df12 -> 52b725b24fae10c4e8b8898874444fd2
+Refreshing native plugins compatible for Editor in 5.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 33 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.8 MB). Loaded Objects now: 6288.
+Memory consumption went from 112.7 MB to 112.0 MB.
+Total: 9.614600 ms (FindLiveObjects: 0.718600 ms CreateObjectMapping: 0.730200 ms MarkObjects: 7.262000 ms  DeleteObjects: 0.902400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 85.578681 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Stairs_650_400_300_Mesh.fbx
+  artifactKey: Guid(7e0223e1d3e1733499accfa5ebffb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Stairs_650_400_300_Mesh.fbx using Guid(7e0223e1d3e1733499accfa5ebffb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc552e67d1fc318f57f94c1ea1d73bc0') in 0.137473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25477bfdd4aaab3dcdb897c129157839') in 0.096327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/bagno/materials/bidet.mat
+  artifactKey: Guid(d17317dd2ee54894eb7d7d0be05b8ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/bidet.mat using Guid(d17317dd2ee54894eb7d7d0be05b8ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6f7ff32dd738d95ee235846bcf5a02') in 0.053097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda090455c1d7a07b6dc042474167260') in 0.051381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat
+  artifactKey: Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat using Guid(f2dcf029949142e28b974630369c8b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33692c8e762a225cbfad7b37c7a9e55d') in 0.044549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Ramp_Mesh.fbx
+  artifactKey: Guid(426a2785f8a940049aac2c246661cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Ramp_Mesh.fbx using Guid(426a2785f8a940049aac2c246661cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d9cdb6275c3731b2b69d92d62d2511') in 0.046304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50597cf9b64bba993c426ab04820ab5') in 0.067533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/StarterAssets/Environment/Art/Materials/Blue_Mat.mat
+  artifactKey: Guid(979aef027a1c86c42a15ce35fce366fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Materials/Blue_Mat.mat using Guid(979aef027a1c86c42a15ce35fce366fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0320733dcf1e8fdc81fa3f2ace88cd22') in 0.025030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/bagno/materials/barattoli.mat
+  artifactKey: Guid(ed6e1164cc1f32640836a53748a8cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/barattoli.mat using Guid(ed6e1164cc1f32640836a53748a8cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6e8cdbdb4bfe868648c6c2c13303d1') in 0.053644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.930413 seconds.
+  path: Assets/Materials/caminetto/Caminetto.001.mat
+  artifactKey: Guid(8f015a602b5dc4447990714a821ede4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/caminetto/Caminetto.001.mat using Guid(8f015a602b5dc4447990714a821ede4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d60d5bb3ab6c642575bde384becf526') in 0.044045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/Casa/Casa 1.mat
+  artifactKey: Guid(0429fcb42de13b949a953be1a09aebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Casa/Casa 1.mat using Guid(0429fcb42de13b949a953be1a09aebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e105694a1c97e8f1a614b8f65301c56') in 0.046839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/camera_da_letto/mensole/candela1_mensola/candela1_material.mat
+  artifactKey: Guid(d076d4b3f1150f4429c5bfb6c12932f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/candela1_mensola/candela1_material.mat using Guid(d076d4b3f1150f4429c5bfb6c12932f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0b7b0457578ee1c8d79ac41b712514') in 0.042588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Materials/casa/Casa.mat
+  artifactKey: Guid(d059a30a2cb3f33409babda196d68a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/casa/Casa.mat using Guid(d059a30a2cb3f33409babda196d68a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465a73e00ade21138e5cd4bfbd9f942f') in 0.037694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Materials/comodino/comodino.mat
+  artifactKey: Guid(35f6047e0d6c6fb4aa7c07a23d8963cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/comodino/comodino.mat using Guid(35f6047e0d6c6fb4aa7c07a23d8963cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3489c51fafb6aafd87c2455286b88bb8') in 0.045410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/bagno/materials/carta.mat
+  artifactKey: Guid(63bd68f683c1b6a4ca0e16ecdde90204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/carta.mat using Guid(63bd68f683c1b6a4ca0e16ecdde90204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc6e8716b39174758a55e035c530c8f') in 0.029683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Menu/grafiche/comandi.mat
+  artifactKey: Guid(1820a2cc4236beb4f90271423d7b9db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/comandi.mat using Guid(1820a2cc4236beb4f90271423d7b9db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e183742f53eac0bf82e440113eee28') in 0.043096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/cucina/tavolo/chiaro.mat
+  artifactKey: Guid(38ac81f3c42a3204da85c9098c8e4351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/tavolo/chiaro.mat using Guid(38ac81f3c42a3204da85c9098c8e4351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ca9d6d5ff0ab88a9b53b1621729abb') in 0.024481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/cucina/dispensa/corpo bianco.mat
+  artifactKey: Guid(073c9be2d999aa44097e6d5898ed623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/dispensa/corpo bianco.mat using Guid(073c9be2d999aa44097e6d5898ed623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192840c9364728f48a85dfa1d52aef9c') in 0.029331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
+  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c779b47bd6653540064017bb4447a20c') in 0.035085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/camera_da_letto/perterra/scarpe/Default OBJ 1.mat
+  artifactKey: Guid(256e17d8e76f46b4a8d86cc806667942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/perterra/scarpe/Default OBJ 1.mat using Guid(256e17d8e76f46b4a8d86cc806667942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea57133e5fb0c0547d1037526963d0fd') in 0.018725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf
+  artifactKey: Guid(158d098da5327984d8f6586f55ddb517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf using Guid(158d098da5327984d8f6586f55ddb517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a447805889abe0cac4a6f1eca05c10') in 0.054915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/bagno/materials/cornice.mat
+  artifactKey: Guid(07af9ff885104aa40abc6633459ff9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/cornice.mat using Guid(07af9ff885104aa40abc6633459ff9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e307575172b4da461a4915333090b1') in 0.025277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Materials/divano/divano.mat
+  artifactKey: Guid(36e10745f3420374b80174255c437b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/divano/divano.mat using Guid(36e10745f3420374b80174255c437b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29011b3cf93866dc183555efceb89739') in 0.034876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf
+  artifactKey: Guid(dfbe8bc0661f0c446b3c4fd60ac20ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf using Guid(dfbe8bc0661f0c446b3c4fd60ac20ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79bde7855e4575cba8d96afb8bef3d4c') in 0.032227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf
+  artifactKey: Guid(2892363e4ba06cc458d0c72a41b573ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf using Guid(2892363e4ba06cc458d0c72a41b573ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8171340865ffb7ebdf6a5178aad3b05f') in 0.025429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-Light.ttf
+  artifactKey: Guid(01d4925e867e98546b167c3a3f6c27a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-Light.ttf using Guid(01d4925e867e98546b167c3a3f6c27a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7f23223d8332571c2437cc24bca19d') in 0.037132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf
+  artifactKey: Guid(a0145236f6a9380418535be38b112f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf using Guid(a0145236f6a9380418535be38b112f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beeda581404c035f42c98f95dfd7ad24') in 0.027013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Font/open-sans/OpenSans-LightItalic.ttf
+  artifactKey: Guid(ed41106937686184aa3f7cbcf920115d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-LightItalic.ttf using Guid(ed41106937686184aa3f7cbcf920115d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587045b74b278c8affa00eaa4df3d560') in 0.028763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf
+  artifactKey: Guid(efafc56d87f32dd4aafb275151b07da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf using Guid(efafc56d87f32dd4aafb275151b07da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac3c410c05ded62b3cc7cf7aca6ebd45') in 0.030543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Font/open-sans/OpenSans-Semibold.ttf
+  artifactKey: Guid(235af3c6cc2379d4e9a87e6a2a0f47fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-Semibold.ttf using Guid(235af3c6cc2379d4e9a87e6a2a0f47fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff1fa16f080171ce56f00af2a45b889') in 0.035517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraBold.ttf
+  artifactKey: Guid(ac7d6a58dd78d1c4eb711643f01d8dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraBold.ttf using Guid(ac7d6a58dd78d1c4eb711643f01d8dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63da5973ed79dfad06bb90043eea36b9') in 0.029169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf
+  artifactKey: Guid(4129b9de4944c4e4ab9ea18dd91ae101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf using Guid(4129b9de4944c4e4ab9ea18dd91ae101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8d1fc5ca3700024c0cb7bac5bcf318') in 0.026411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-SemiBoldItalic.ttf
+  artifactKey: Guid(87cc867764a26be458bd8d8f5acbe873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-SemiBoldItalic.ttf using Guid(87cc867764a26be458bd8d8f5acbe873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1e1fea3bc82c7cc1b893a6bcad22eb') in 0.024971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Box_350x250x300_Mesh.fbx
+  artifactKey: Guid(d2f0da3998423f44594868ffed55c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Box_350x250x300_Mesh.fbx using Guid(d2f0da3998423f44594868ffed55c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea5f5cde5c25954176243b21531be81') in 0.039243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/StarterAssets/Environment/Art/Materials/GridWhite_01_Mat.mat
+  artifactKey: Guid(dbf898c9f9c4a2d46aa6336e23caeb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Materials/GridWhite_01_Mat.mat using Guid(dbf898c9f9c4a2d46aa6336e23caeb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df9621c02ef17a136042e869dfbbbd6') in 2.159704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/Material.001.mat
+  artifactKey: Guid(433fa2d98a98f014f85233ac1e3ea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/Material.001.mat using Guid(433fa2d98a98f014f85233ac1e3ea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8aa183050dc8be3540f74d0e4fb730') in 0.027524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/salotto/mobile a muro/MOBILE_SALOTTO.mat
+  artifactKey: Guid(3f5c47d3251753c47930f22f7b1e74ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/MOBILE_SALOTTO.mat using Guid(3f5c47d3251753c47930f22f7b1e74ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8f5250bc6b3493d0798572be859d8a') in 0.041982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf
+  artifactKey: Guid(5e5a9d990d041ea42b37d7527ea6127b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf using Guid(5e5a9d990d041ea42b37d7527ea6127b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80e8262b58201b10f8f033e15ffe3df') in 0.023379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.008.mat
+  artifactKey: Guid(d6c9c600347e20a44af550a9ac9f0921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.008.mat using Guid(d6c9c600347e20a44af550a9ac9f0921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b04c9009717976ed038ce598c520d0a') in 0.024588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/camera_da_letto/perterra/cestino/posacenere_color.mat
+  artifactKey: Guid(2c85d7d1ae347ff46bbf3039841c2c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/perterra/cestino/posacenere_color.mat using Guid(2c85d7d1ae347ff46bbf3039841c2c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e051e9599094c3050042e2fae9b76a2c') in 0.028698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/cucina/cassettiera/manopole.mat
+  artifactKey: Guid(f316098fd535fc34d8344e7570bd1679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/cassettiera/manopole.mat using Guid(f316098fd535fc34d8344e7570bd1679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5092d8eda1a1323df2487ff925c977d') in 0.021534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/salotto/pianta/PIANTA.mat
+  artifactKey: Guid(86064a3f5c108074f9b4b09441b3492e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/pianta/PIANTA.mat using Guid(86064a3f5c108074f9b4b09441b3492e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbacf2f277335a31a8b4780a690a754') in 0.036894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Models/camera_da_letto/letto/material_coperta.mat
+  artifactKey: Guid(b9e9c456eec4dc84d9f2ab14792e6736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/letto/material_coperta.mat using Guid(b9e9c456eec4dc84d9f2ab14792e6736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5a8eaf08d0ca79cc220ad0e1431002a') in 0.047659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/bagno/materials/lavandino.mat
+  artifactKey: Guid(c21ee384df290a44881081529f94d4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/lavandino.mat using Guid(c21ee384df290a44881081529f94d4d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15f548458e1bb97a915857207e8005f') in 0.029879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c2356ff5b75f98538ac12f00e9b30b') in 0.028018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/computer/Material.004.mat
+  artifactKey: Guid(646483c281caf27408d68dc6d1523e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/computer/Material.004.mat using Guid(646483c281caf27408d68dc6d1523e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cbb3ea572e6fb6c3eedb9bbcb08f96') in 0.016288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/bagno/materials/teppeto.mat
+  artifactKey: Guid(104b8c83c8827214c80773c9f0b09d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/teppeto.mat using Guid(104b8c83c8827214c80773c9f0b09d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a5eefd8dc5e77ee56e055ec070fd9d') in 0.027469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661bcc978213bf698723f66e98820224') in 0.052586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-Black.ttf
+  artifactKey: Guid(5b1ebc884d0428e40a36446d32af6fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-Black.ttf using Guid(5b1ebc884d0428e40a36446d32af6fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b597db14884f8973aa8388193346a290') in 0.017152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.087.mat
+  artifactKey: Guid(b0b9111eae7647f42abc269e48d7b401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.087.mat using Guid(b0b9111eae7647f42abc269e48d7b401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c142d1ab163d25ab0f055ce2a4b9b499') in 0.020373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Ramp_100x100x200_Mesh.fbx
+  artifactKey: Guid(bfff06aaff363a847ad37bf592364e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Ramp_100x100x200_Mesh.fbx using Guid(bfff06aaff363a847ad37bf592364e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186505f8a95fa02e3f4eb209e65e4a81') in 0.031691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Font/Source_Code_Pro/SourceCodePro-VariableFont_wght SDF_customChar.asset
+  artifactKey: Guid(9e5c673870b90e041a7a563bd98eda25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/SourceCodePro-VariableFont_wght SDF_customChar.asset using Guid(9e5c673870b90e041a7a563bd98eda25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a9b6e16c1f4917c446a57614f77af9') in 0.051031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Font/open-sans/OpenSans-ExtraBold.ttf
+  artifactKey: Guid(020e5d73b4b0c7346a3405bfa996a5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-ExtraBold.ttf using Guid(020e5d73b4b0c7346a3405bfa996a5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750290010361b2ba8d2c5c37c353a1ca') in 0.027927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.046.mat
+  artifactKey: Guid(be1f016c45293724fa2aed6615d3969a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.046.mat using Guid(be1f016c45293724fa2aed6615d3969a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce67f143e1aaddae708e713d2474c17') in 0.023587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/giardino/textures/tavolino.mat
+  artifactKey: Guid(c23ffc2e8a689304fb2e35f652085a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/giardino/textures/tavolino.mat using Guid(c23ffc2e8a689304fb2e35f652085a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c75bae2d0d8105af3c6f929e9b32b9e') in 0.046972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf
+  artifactKey: Guid(b2389fa1f513d3545acd57e14d896a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf using Guid(b2389fa1f513d3545acd57e14d896a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece24644c8e15688dd1dcff5254f7b26') in 0.018476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr6.mat
+  artifactKey: Guid(044a25f6d7a671142b4b1cb6fda69369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr6.mat using Guid(044a25f6d7a671142b4b1cb6fda69369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783dd9b36661bf5965f949e0f36a6f5a') in 0.031231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr4.mat
+  artifactKey: Guid(96c54fc910a4b6e4fa96298baa38898b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr4.mat using Guid(96c54fc910a4b6e4fa96298baa38898b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e606f9b925f6081b963aae96e5a511e') in 0.027881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat
+  artifactKey: Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat using Guid(b246c4190f4e46ec9352fe15a7b09ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8313825cc5d7a2e38d9ae14ee707b1f1') in 0.038033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/cucina/forno e fornello/manopole.mat
+  artifactKey: Guid(b852b69645e678f40a5cc064872323a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/forno e fornello/manopole.mat using Guid(b852b69645e678f40a5cc064872323a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cee23122507402934feb5bb86b0571c') in 0.017960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf
+  artifactKey: Guid(528495156cf63224e95d66768f7e6256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf using Guid(528495156cf63224e95d66768f7e6256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a865adef53b121622a7396ecda30d8') in 0.019165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.097.mat
+  artifactKey: Guid(ce0dfdccf665c6c4299397c1eeee2549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.097.mat using Guid(ce0dfdccf665c6c4299397c1eeee2549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b9a2411ef17e0771f60e07ef403854') in 0.022839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Font/open-sans/OpenSans-Light.ttf
+  artifactKey: Guid(00d7cfc98f40c9442abe3775ad926576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-Light.ttf using Guid(00d7cfc98f40c9442abe3775ad926576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95ff9e823be1566d652e6bb0c6781b7') in 0.024097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/cucina/frigo/SimpleTexturedMaterial.mat
+  artifactKey: Guid(f262f3ffb1c793640b56ffeef622066f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/frigo/SimpleTexturedMaterial.mat using Guid(f262f3ffb1c793640b56ffeef622066f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3bb49a5783b19fa951b52452874e3b') in 0.016436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.050.mat
+  artifactKey: Guid(4091da1d87c56b844a21393a5ca8227e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.050.mat using Guid(4091da1d87c56b844a21393a5ca8227e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df656984a37600e4c988607abaaa4b27') in 0.025915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/salotto/tavolino/tavolino.mat
+  artifactKey: Guid(ac0b7866b3d2dd24384e07dfc70f8894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/tavolino/tavolino.mat using Guid(ac0b7866b3d2dd24384e07dfc70f8894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ed8c0d6732dbca076b115f3498fa50') in 0.028143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/camera_da_letto/quadro/Material.003 1.mat
+  artifactKey: Guid(274a764ceb8bb4549a377bec4c1dc839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/quadro/Material.003 1.mat using Guid(274a764ceb8bb4549a377bec4c1dc839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5a0b40baaf8eaed410cbca71a1a761') in 0.038332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/salotto/mobile a muro/oggettistica.mat
+  artifactKey: Guid(598621eeb33542649b8ef914b4191fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/oggettistica.mat using Guid(598621eeb33542649b8ef914b4191fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d441bae9856e8808130d2e739b12dc') in 0.043734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/bagno/materials/mobili.003.mat
+  artifactKey: Guid(f31a78a95d9ca1248a6cf665560ff51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/mobili.003.mat using Guid(f31a78a95d9ca1248a6cf665560ff51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6524f93751dd357c190646e03d03953e') in 0.047219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
+  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26bffa62c460ffaf5656634b63e8c4c3') in 1.750194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eecc519131a4a36fab836436a4e9025') in 0.020369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/camera_da_letto/mensole/cornice_mensola/material_quadro_mensola.mat
+  artifactKey: Guid(9f360f95a365be1418410dea70d86193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/cornice_mensola/material_quadro_mensola.mat using Guid(9f360f95a365be1418410dea70d86193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59bf9d3ec1dad3cc99553b096fb8fdb') in 0.029279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/cucina/calendario/giallo.mat
+  artifactKey: Guid(152f94a44d8d83743b8f415bb55c9037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/calendario/giallo.mat using Guid(152f94a44d8d83743b8f415bb55c9037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994513518e7df842e14c5ef84880bb2d') in 0.015969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Medium.ttf
+  artifactKey: Guid(3e0a1c9314b56224f87ddacd164f8a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Medium.ttf using Guid(3e0a1c9314b56224f87ddacd164f8a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf31ee8d0151a1bb0cd378f6c6806b90') in 0.022514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat
+  artifactKey: Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat using Guid(c719e38f25a9480abd2480ab621a2949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b31cf97608f7902439699cbec6d8ca') in 0.016469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.081.mat
+  artifactKey: Guid(a817bf81e2d7ab443af76007f5bf17c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.081.mat using Guid(a817bf81e2d7ab443af76007f5bf17c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b156f43bf8cbc1cca5d4d150730186') in 0.020185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/cucina/tavolo/tubo dell'acqua.mat
+  artifactKey: Guid(a3766c5709c7447408f67cab6d037068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/tavolo/tubo dell'acqua.mat using Guid(a3766c5709c7447408f67cab6d037068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd215242c9e99dc2dd54a0caaffb2c5de') in 0.015644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/bagno/materials/lavandino 2.mat
+  artifactKey: Guid(31e4e43ec2fe521428b87a830212e0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/lavandino 2.mat using Guid(31e4e43ec2fe521428b87a830212e0dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6efeb548362f7ac35bc3b5bd013f8e6c') in 0.018260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Studio/Scrivania/Material.004.mat
+  artifactKey: Guid(d0634dc024601f148ab07425754f0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Scrivania/Material.004.mat using Guid(d0634dc024601f148ab07425754f0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6053429634659358b031144321b18c') in 0.016063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baba8fa85c995fe68f1cc4c5019a1066') in 0.034473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Menu/grafiche/menu_start.mat
+  artifactKey: Guid(8bf9d98f374e8734a8484da8cbfc3b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/menu_start.mat using Guid(8bf9d98f374e8734a8484da8cbfc3b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbeaf2ace94c4520ae0489ec1a8bdc2') in 0.034997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.043.mat
+  artifactKey: Guid(93090f2034ca6d14faea5a5a9439ac5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.043.mat using Guid(93090f2034ca6d14faea5a5a9439ac5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0294ae91921ecf20e89f1340b61e2922') in 0.021032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/salotto/poltrona.fbx
+  artifactKey: Guid(d3e3c9eb2620d2d4cb118ccc0ed53923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/poltrona.fbx using Guid(d3e3c9eb2620d2d4cb118ccc0ed53923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd7d1abb7333aedc15ec399b504b9a9') in 0.036637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf
+  artifactKey: Guid(3fd25a937dc29fc4ebb7fd6415805e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf using Guid(3fd25a937dc29fc4ebb7fd6415805e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c131bd1510a8aee583e3695cfc2fab82') in 0.016714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Studio/Computer/UV_GRID.mat
+  artifactKey: Guid(2ea361fe8bc281147bf35650beb5d776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Computer/UV_GRID.mat using Guid(2ea361fe8bc281147bf35650beb5d776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07782f4d12978030d0a4dcb0ad852a53') in 0.016376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.082.mat
+  artifactKey: Guid(3a5d8101cba0c4442bf630deaefa7c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.082.mat using Guid(3a5d8101cba0c4442bf630deaefa7c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ff5d4cbd339b0302444eb6dce2601c') in 0.020394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/salotto/quadro/quadro 1.mat
+  artifactKey: Guid(e5513086e90e0ac4695d6b04668413c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/quadro/quadro 1.mat using Guid(e5513086e90e0ac4695d6b04668413c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65aeb3a6562e4cc0ff044f86c205fb1') in 0.022464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea1bd3041a5006949bba127f0d4da65') in 0.041342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/giardino/textures/divano.mat
+  artifactKey: Guid(6851a4612d847454dba0f52a3265a399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/giardino/textures/divano.mat using Guid(6851a4612d847454dba0f52a3265a399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae3dfe8a0f198669beee4bca6d66a8d') in 0.044565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3494e6f41fc95b320210657c33686fa9') in 0.021532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Tunnel_Mesh.fbx
+  artifactKey: Guid(f712806514868e54699156ec05dcb749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Tunnel_Mesh.fbx using Guid(f712806514868e54699156ec05dcb749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102e1ca11437feb9d4c92f9aa9fc0c48') in 0.032482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.027.mat
+  artifactKey: Guid(eb96a8a6c28de6e4ca4fd00d84fc9e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.027.mat using Guid(eb96a8a6c28de6e4ca4fd00d84fc9e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af22bfccc1902d737b10f30c360f8661') in 0.020941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/camera_da_letto/cassettiera 1/cornice_cassettiera/material_quadro_scrivania1.mat
+  artifactKey: Guid(ddb59bef1ac1e834a96a453c62d6085d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/cassettiera 1/cornice_cassettiera/material_quadro_scrivania1.mat using Guid(ddb59bef1ac1e834a96a453c62d6085d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f7e43d79213cbed9845d5ff6a40c42') in 0.027982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/cucina/calendario/SimpleTexturedMaterial.mat
+  artifactKey: Guid(c664c4c7e4364d246b6cd64870cc64a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/calendario/SimpleTexturedMaterial.mat using Guid(c664c4c7e4364d246b6cd64870cc64a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e68e99e3e5e6fdcb89c3af28a4a7600') in 0.016696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-Bold.ttf
+  artifactKey: Guid(faa575da5876a894bb2fd416d9b58b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-Bold.ttf using Guid(faa575da5876a894bb2fd416d9b58b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d60cfa66c845dd2f97a8106841414e') in 0.016102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Menu/grafiche/menu_sfondo.mat
+  artifactKey: Guid(8749e46c9c7b2d54d931ef46ca0173b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/menu_sfondo.mat using Guid(8749e46c9c7b2d54d931ef46ca0173b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94154cbd7ea7cfca79deaed48a910f78') in 0.027341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.072.mat
+  artifactKey: Guid(bfe279f2ee05026448ded27a8a320502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.072.mat using Guid(bfe279f2ee05026448ded27a8a320502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33dd5a6884ad43f76ed87d3ea4b937bc') in 0.019985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/bagno/materials/water.mat
+  artifactKey: Guid(47ff15cdd86f1224180f0abefac6d1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/water.mat using Guid(47ff15cdd86f1224180f0abefac6d1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba81727f0d197fbeb2eaba9955fe25a5') in 0.039047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.063.mat
+  artifactKey: Guid(0ed98a0a5fa152f458772a63bfd8eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.063.mat using Guid(0ed98a0a5fa152f458772a63bfd8eb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7af1b83c53d611ded50b68b5989d0ed') in 0.020442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf
+  artifactKey: Guid(b419410eabbbca84984791b88b50a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf using Guid(b419410eabbbca84984791b88b50a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e465f0efc1c9106037300320d352c35') in 0.018414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/camera_da_letto/cassettiera/Material_cassetto.mat
+  artifactKey: Guid(444e54d9c93e8b742aeb618ba123990a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/cassettiera/Material_cassetto.mat using Guid(444e54d9c93e8b742aeb618ba123990a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa50415d973ae520388b16d9a4bfbd0f') in 0.032404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr1.mat
+  artifactKey: Guid(2fd9d15962fcfd84f8858d12a67e8805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr1.mat using Guid(2fd9d15962fcfd84f8858d12a67e8805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cec397501006461d32569dab5de4f4') in 0.027425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Studio/Sedia lavoro/seduta e schienale.mat
+  artifactKey: Guid(ddeeab64ac7b8824e8072445d805ec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Sedia lavoro/seduta e schienale.mat using Guid(ddeeab64ac7b8824e8072445d805ec7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ec8434f6e15c4382466105e1962574') in 0.015413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Menu/grafiche/pausa_volume/pause_menu.mat
+  artifactKey: Guid(2e52dba99fc2ee74e9872156cbd5d18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/pausa_volume/pause_menu.mat using Guid(2e52dba99fc2ee74e9872156cbd5d18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfdc5115f7b66cf28b3f90c0c2fa2d8') in 0.058648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf
+  artifactKey: Guid(ea1b1bef96c01704e8d145002cfad0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf using Guid(ea1b1bef96c01704e8d145002cfad0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097b23ed184e8fa3531b552616627265') in 0.017970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Font/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght SDF.asset
+  artifactKey: Guid(87911cb26d1c663499d37a8f4d4d54c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght SDF.asset using Guid(87911cb26d1c663499d37a8f4d4d54c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc96ab00f9b21abb7ede72f63025609') in 0.072581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/salotto/mobile a muro/Sheets.mat
+  artifactKey: Guid(5cfce4623756555448fef3a1aa1bd27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Sheets.mat using Guid(5cfce4623756555448fef3a1aa1bd27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891a871fc7e985cec591b1fdc84adc12') in 0.021733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght.ttf
+  artifactKey: Guid(28ef2c0df8c2f254ea3e4921d92d7120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght.ttf using Guid(28ef2c0df8c2f254ea3e4921d92d7120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f6e4b21788d005101ce8b8be19c897') in 0.022032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Font/open-sans/OpenSans-SemiboldItalic.ttf
+  artifactKey: Guid(aec43927d0849d94f940bedbc1e7c4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-SemiboldItalic.ttf using Guid(aec43927d0849d94f940bedbc1e7c4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c9d1af85b38b864f93183a20540ff3') in 0.022815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/StarterAssets/Environment/Art/Materials/GreyBlue_Mat.mat
+  artifactKey: Guid(6b911390c5825014e8377183a7837d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Materials/GreyBlue_Mat.mat using Guid(6b911390c5825014e8377183a7837d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e0f89fa1d83bc116244f03e403c5d5') in 1.664527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Models/camera_da_letto/comodini/pacchetto_sigarette/sigarette_material.mat
+  artifactKey: Guid(68bcbd1def113bf49a4940f4a39d9593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodini/pacchetto_sigarette/sigarette_material.mat using Guid(68bcbd1def113bf49a4940f4a39d9593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074ca43e855e722afd2c3b696d0da37f') in 0.031626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/salotto/mobile a muro/leaves_texture.mat
+  artifactKey: Guid(2bf48c9d05211bc4ea6c7a8e9c20cb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/leaves_texture.mat using Guid(2bf48c9d05211bc4ea6c7a8e9c20cb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be77dc41d23797b928e2bac1a080212') in 0.039899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Materials/Ingresso/portachiavi.mat
+  artifactKey: Guid(38a4bf269b5f4c443a245a1e3dd4faee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ingresso/portachiavi.mat using Guid(38a4bf269b5f4c443a245a1e3dd4faee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f228dd20fb04c9b7f4b4fc774889bee5') in 0.035367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.058.mat
+  artifactKey: Guid(e6dc44a465b2ae04fb8dd3f4d136412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.058.mat using Guid(e6dc44a465b2ae04fb8dd3f4d136412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80ffa41f6f4ef89d07ac93425b80f9b') in 0.020156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr14.mat
+  artifactKey: Guid(56749a1b79faf54498461390c8a379fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr14.mat using Guid(56749a1b79faf54498461390c8a379fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e39eb9381f96a52d9d0125bc2ad109') in 0.026496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/salotto/tende/wood.mat
+  artifactKey: Guid(f9b2ea0e68ca1e641a1430ba1f2193ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/tende/wood.mat using Guid(f9b2ea0e68ca1e641a1430ba1f2193ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c11f9fedfdc072d5535c90bee75f5b') in 0.024352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.078.mat
+  artifactKey: Guid(4a70f3d93b8da724088d55ea0126286d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.078.mat using Guid(4a70f3d93b8da724088d55ea0126286d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ae962b5bc074f699e2a9a87f4238db') in 0.021040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/tastiera/materiale_tastiera.mat
+  artifactKey: Guid(fd132a5e6e9377f4cbdf64637959ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/tastiera/materiale_tastiera.mat using Guid(fd132a5e6e9377f4cbdf64637959ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a156da1790b5b09f385c4e0a04cf63') in 0.017925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-MediumItalic.ttf
+  artifactKey: Guid(32e1a6a5f3ccb1d4abb36cffebdc28dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-MediumItalic.ttf using Guid(32e1a6a5f3ccb1d4abb36cffebdc28dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d37927f40680592d25b28dc5e5ebc83') in 0.018239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/salotto/lampada/lampada.mat
+  artifactKey: Guid(cc42ae9ef0a3f3d41891d103a2c63fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/lampada/lampada.mat using Guid(cc42ae9ef0a3f3d41891d103a2c63fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80189308aae1bdeffa9cbb8d60c31e84') in 0.037829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/bagno/materials/mobili.001.mat
+  artifactKey: Guid(0a7b585240c526941850a498576658c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/mobili.001.mat using Guid(0a7b585240c526941850a498576658c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a47696cf76dc4f340f795c3a5cf8096') in 0.025152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/salotto/tende/Textile.mat
+  artifactKey: Guid(912300a1f83fc0947a67badfbb8e1af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/tende/Textile.mat using Guid(912300a1f83fc0947a67badfbb8e1af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403764bc195df85b5672607df6a614d1') in 0.043780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/bagno/materials/water 1.mat
+  artifactKey: Guid(d813299c588dcb2428ff0cbb1f76fe86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/water 1.mat using Guid(d813299c588dcb2428ff0cbb1f76fe86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533f405643bf2b0e51fedb4dce0eef68') in 0.022851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/cucina/calendario/rosso.mat
+  artifactKey: Guid(3013b8a71b3d67546b6dba410fca269e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/calendario/rosso.mat using Guid(3013b8a71b3d67546b6dba410fca269e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd8ae67c0d27e0dcc212f9e1045edc3') in 0.015956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/camera_da_letto/poster/material_poster.mat
+  artifactKey: Guid(9e66160bc78bab649abf0eac1e9ba926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/poster/material_poster.mat using Guid(9e66160bc78bab649abf0eac1e9ba926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b3cab66423f1ba510447098ea7a70b6') in 0.039266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Font/open-sans/OpenSans-Regular.ttf
+  artifactKey: Guid(cd34c523cf45be042b8a56c0a2c4407e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-Regular.ttf using Guid(cd34c523cf45be042b8a56c0a2c4407e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c421c7f957d999511414c9cd233d80c') in 0.021760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/camera_da_letto/perterra/palla/pallone_material.mat
+  artifactKey: Guid(96d2b42d76cf6324fb4f13bbab96384b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/perterra/palla/pallone_material.mat using Guid(96d2b42d76cf6324fb4f13bbab96384b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9533b9cedd89dde985cf2c03781bef') in 0.040147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Font/open-sans/OpenSans-Italic.ttf
+  artifactKey: Guid(6ffad59248508804694d2ea13f9cd815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-Italic.ttf using Guid(6ffad59248508804694d2ea13f9cd815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bee8a4b706785bd58e45b8c284f2f51') in 0.024861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr2.mat
+  artifactKey: Guid(515952785f5d15344992583b8c254f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr2.mat using Guid(515952785f5d15344992583b8c254f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9eb0fb347daa2f8a6dbabdc96a94d54') in 0.025982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf
+  artifactKey: Guid(c9c711aba51d2324093ba52d2c43aab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf using Guid(c9c711aba51d2324093ba52d2c43aab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9236a94fe93a62eb314c0e71842a0e1a') in 0.016709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Menu/grafiche/sconfitta.mat
+  artifactKey: Guid(b4a60f58651d9054fae171e07add3550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/sconfitta.mat using Guid(b4a60f58651d9054fae171e07add3550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8104e757125207d09af080500df83424') in 0.029374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/cucina/sedia/gambe tavolo e sedie.mat
+  artifactKey: Guid(1b6179212f61914428fd059b6793e7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/cucina/sedia/gambe tavolo e sedie.mat using Guid(1b6179212f61914428fd059b6793e7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001069a7ce1a1869bed196ecc85903dc') in 0.015536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Models/camera_da_letto/comodini/libri_comodin/Material_libri_comodino.mat
+  artifactKey: Guid(266862b6209cb944ca2003dc55590b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodini/libri_comodin/Material_libri_comodino.mat using Guid(266862b6209cb944ca2003dc55590b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c8f740a5ad75aee08316c956583957') in 0.025905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/camera_da_letto/comodini/lampada_comodino/material_comodino.mat
+  artifactKey: Guid(ad2be4a9ba7d0d74cb7a562c8ed8738d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodini/lampada_comodino/material_comodino.mat using Guid(ad2be4a9ba7d0d74cb7a562c8ed8738d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838c971c445440189f1266381f809bcd') in 0.025823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Studio/Computer/Material.004.mat
+  artifactKey: Guid(2b42f2cf15344a5469f03eb3e937cc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Computer/Material.004.mat using Guid(2b42f2cf15344a5469f03eb3e937cc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5ba1ea40ec148334567e97313f7a37') in 0.015190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Font/open-sans/OpenSans-Bold.ttf
+  artifactKey: Guid(e9d06379900a9fb49997500b1054b43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/open-sans/OpenSans-Bold.ttf using Guid(e9d06379900a9fb49997500b1054b43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c67271ba4e20970990f5f6abbe626c') in 0.020208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.054.mat
+  artifactKey: Guid(d8d29f63f6c8ec542ab123150702d602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.054.mat using Guid(d8d29f63f6c8ec542ab123150702d602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ba04520a94c080f745a014219b1159') in 0.019975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Italic.ttf
+  artifactKey: Guid(348d906fcb4a7bd4e99b94860a766306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Italic.ttf using Guid(348d906fcb4a7bd4e99b94860a766306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360475011f6a815120a122a06341cf20') in 0.017508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.011.mat
+  artifactKey: Guid(ac4ed829cfd00494fb9192cba417476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.011.mat using Guid(ac4ed829cfd00494fb9192cba417476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2b60ef803283a6da98f0045e6e2e86') in 0.021028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/StarterAssets/Environment/Art/Models/Wall_Mesh.fbx
+  artifactKey: Guid(ff02a0a00ab750f48b09459b1cafd1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StarterAssets/Environment/Art/Models/Wall_Mesh.fbx using Guid(ff02a0a00ab750f48b09459b1cafd1b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27bad9e8ff912d289c8ac7524397c6c2') in 0.031142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/camera_da_letto/quadro/Material.003.mat
+  artifactKey: Guid(e64b492dd99291d4f8c42c41588b5160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/quadro/Material.003.mat using Guid(e64b492dd99291d4f8c42c41588b5160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584eff9d199ff3afaec097732cb648a8') in 0.021787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd908834bbecdccf5580b57c9321480') in 0.050941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Models/camera_da_letto/mensole/oggetto_mensola/posacenere_color.mat
+  artifactKey: Guid(e1fe84499fdf4ae4c8430dbb840c9530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/oggetto_mensola/posacenere_color.mat using Guid(e1fe84499fdf4ae4c8430dbb840c9530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f06a1e3964ea3fdcf615cabe7c04785') in 0.025594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/camera_da_letto/mensole/mensola/Material_contenitore.mat
+  artifactKey: Guid(ea4be665cfc7bcc4180ee9d3b6d91a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/mensola/Material_contenitore.mat using Guid(ea4be665cfc7bcc4180ee9d3b6d91a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1fd4c1d6c6cf1d13e455ec703305c7') in 0.024984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.049.mat
+  artifactKey: Guid(ded8bd3e1261ae04184d87f194cdcd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.049.mat using Guid(ded8bd3e1261ae04184d87f194cdcd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296037dc679456a708b10f402cbe51f9') in 0.028608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.077.mat
+  artifactKey: Guid(05a75d2c6a12c154f8b0694ea676e003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.077.mat using Guid(05a75d2c6a12c154f8b0694ea676e003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ceebf8acfafe08f20cbe9daba41270f') in 0.022615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/sedia_da_ufficio/materiale_sedia 1.mat
+  artifactKey: Guid(7ba8c61026cb72348ad6f85281cb937d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/sedia_da_ufficio/materiale_sedia 1.mat using Guid(7ba8c61026cb72348ad6f85281cb937d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40bbb55e2e0ea74506d4fa4deda954cc') in 0.024758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.036.mat
+  artifactKey: Guid(d5b9747aa9b6cd44481f2d235933e8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.036.mat using Guid(d5b9747aa9b6cd44481f2d235933e8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a95195d900bc55e020d3cb4348006b') in 0.021176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/camera_da_letto/tappeto/material_tappeto.mat
+  artifactKey: Guid(53a752b5cf78d3941916cebb91af1d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/tappeto/material_tappeto.mat using Guid(53a752b5cf78d3941916cebb91af1d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b989a228d0c4c47759bd5a12b900e1') in 0.030439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/camera_da_letto/comodini/posacenere/posacenere_color.mat
+  artifactKey: Guid(0d850b251cc1157428e6c1d9f7b4e3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodini/posacenere/posacenere_color.mat using Guid(0d850b251cc1157428e6c1d9f7b4e3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d69ea1d82c93183aadbc421d9b05c8') in 0.028910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.090.mat
+  artifactKey: Guid(918ead90975e9024aad286d39face3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.090.mat using Guid(918ead90975e9024aad286d39face3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4a1b48234850b1aafcf6d94fcc595b6') in 0.021601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Studio/Sedia lavoro/gambe.mat
+  artifactKey: Guid(27c93c0d90687374a999bc5ec53c6009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Sedia lavoro/gambe.mat using Guid(27c93c0d90687374a999bc5ec53c6009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a51a5e1643199106a1cbebecba293bf') in 0.019778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Casa/zoccoletti eporte.mat
+  artifactKey: Guid(f34b54f5df0717f458728b2decf0cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Casa/zoccoletti eporte.mat using Guid(f34b54f5df0717f458728b2decf0cfd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aecbe255c035cf661312cd0e44f5899') in 0.047983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Models/camera_da_letto/collezione_francobolli/material_fr16.mat
+  artifactKey: Guid(9ece59a3eba053947b0ab8634f9ac316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/collezione_francobolli/material_fr16.mat using Guid(9ece59a3eba053947b0ab8634f9ac316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e91c24322128df9fc320480bfa8177') in 0.039021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf
+  artifactKey: Guid(4530f5bf09bb9b04a8552b8ee52f4668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf using Guid(4530f5bf09bb9b04a8552b8ee52f4668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c3ee9e4882863042db0426fefb576b') in 0.031572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Materials/casa/Materials/Struttura_casa_albedo.mat
+  artifactKey: Guid(84765aaad8c07b844ae94cb2e408d3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/casa/Materials/Struttura_casa_albedo.mat using Guid(84765aaad8c07b844ae94cb2e408d3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ecce6317c28eec4024cd7ff798301e') in 0.023951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf
+  artifactKey: Guid(321c1f81fac70f74085931ba61562040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf using Guid(321c1f81fac70f74085931ba61562040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d61bc47b24f4f962d7a87411fdf139') in 0.024670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/salotto/mobile a muro/liri 1.mat
+  artifactKey: Guid(a5b24e21b61028148a53e355c15902bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/liri 1.mat using Guid(a5b24e21b61028148a53e355c15902bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b746a581677335b8e47819bc9cbd8d') in 0.050470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Materials/Ingresso/tavolio.mat
+  artifactKey: Guid(63b8060efa090f542897deb003a118ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ingresso/tavolio.mat using Guid(63b8060efa090f542897deb003a118ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c3363fda2d5c32edc1b0478b6d3560') in 0.057864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.028.mat
+  artifactKey: Guid(4f7881ab40100f84ebae1c6ab4f3a58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.028.mat using Guid(4f7881ab40100f84ebae1c6ab4f3a58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0025ee5e46db9f5b6f5f12f94b6b8040') in 0.032759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-Italic.ttf
+  artifactKey: Guid(c0a4e10fd2b41e64c88a313bf2e5ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-Italic.ttf using Guid(c0a4e10fd2b41e64c88a313bf2e5ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34afd7fad9b079545aaab9121f2140f') in 0.023902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Prefabs/Studio/Libreria/Material.mat
+  artifactKey: Guid(adc63cf0f2706ff4f84ed8bc92d80923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Studio/Libreria/Material.mat using Guid(adc63cf0f2706ff4f84ed8bc92d80923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55215d353b809b860d0fcfa00121a35') in 0.050469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf
+  artifactKey: Guid(056b6ce9a1df40a4cb9e5c2726077f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf using Guid(056b6ce9a1df40a4cb9e5c2726077f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a122b998c2825f105e7c05b8b09b6519') in 0.028339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Bold.ttf
+  artifactKey: Guid(df6e63bd4c0ca624cb9aa0713ea48e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/font/Source_Code_Pro/static/SourceCodePro-Bold.ttf using Guid(df6e63bd4c0ca624cb9aa0713ea48e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9a6c04c55fb575379b9edd51f43c95') in 0.026255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/scrivania/Material_contenitore.mat
+  artifactKey: Guid(4d9a293b6109ff14a923a300a8db4942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/scrivania/Material_contenitore.mat using Guid(4d9a293b6109ff14a923a300a8db4942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8636caf6256bced81f1557447a80167') in 0.035897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf
+  artifactKey: Guid(2aaeecda74d2aa5419b43c25ea1ca02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf using Guid(2aaeecda74d2aa5419b43c25ea1ca02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898b9bac67718f89774b5a40905dd988') in 0.028927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/salotto/mobile a muro/liri2.mat
+  artifactKey: Guid(12b66d67253312d478091eea7a4d6b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/liri2.mat using Guid(12b66d67253312d478091eea7a4d6b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf99780e6c3205b0f17d4b9b1ade7973') in 0.054453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/salotto/mobile a muro/Material.015.mat
+  artifactKey: Guid(1e48c5c5b01bc3e448a1456458f4d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/salotto/mobile a muro/Material.015.mat using Guid(1e48c5c5b01bc3e448a1456458f4d868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9ca038f9bdad3273e423c0d7d5dd3e') in 0.033390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Font/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght.ttf
+  artifactKey: Guid(f8141be29fd12e14ba6ee89d186a2295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/SourceCodePro-Italic-VariableFont_wght.ttf using Guid(f8141be29fd12e14ba6ee89d186a2295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e6fadbf3f5169055bf785cef1a7fb9') in 0.027041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6467fd074e98a8d1c11eefe2ffe79b29') in 0.034603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/bagno/materials/mobili.mat
+  artifactKey: Guid(29fe80ebafcd3494891bb149c0cab482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/bagno/materials/mobili.mat using Guid(29fe80ebafcd3494891bb149c0cab482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb70d0e631cf703d3fdf48fc8745412') in 0.045150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Font/Source_Code_Pro/static/SourceCodePro-Regular.ttf
+  artifactKey: Guid(58614cc02af94c441be29ac64ca1598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Source_Code_Pro/static/SourceCodePro-Regular.ttf using Guid(58614cc02af94c441be29ac64ca1598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aef6bfc664ee96038c727803db0586d') in 0.030302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 738.575570 seconds.
+  path: Assets/Models/Casa/Casa_ACCESSORI.fbx
+  artifactKey: Guid(8153fbe54d8d24847ad838f065f151de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Casa/Casa_ACCESSORI.fbx using Guid(8153fbe54d8d24847ad838f065f151de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4733aed33f215902b1cd0075f13a4d1b') in 0.237840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.786615 seconds.
+  path: Assets/Models/Casa/ACCESSORI CASA_COMBINE_M_R.png
+  artifactKey: Guid(2e58d17ad9486004fb4d9cb8cb94cf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Casa/ACCESSORI CASA_COMBINE_M_R.png using Guid(2e58d17ad9486004fb4d9cb8cb94cf0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e98c8d522de9aad4f8e0c758fc48135') in 0.020743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1023.563185 seconds.
+  path: Assets/Models/camera_da_letto/armadio/armadio.fbx
+  artifactKey: Guid(5bb0276cfd9ed2849983b0faf4386f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/armadio/armadio.fbx using Guid(5bb0276cfd9ed2849983b0faf4386f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ca256cabdc52855c977f2244cee598') in 0.116401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_olor.png
+  artifactKey: Guid(1d2a9f4facf4bf646aae2ebbdc2918da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_olor.png using Guid(1d2a9f4facf4bf646aae2ebbdc2918da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c012c52b03ee2fae23b0ae08f8e64e03') in 0.021723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/camera_da_letto/mensole/mensola/contenitore_COMBINED_M_R.png
+  artifactKey: Guid(54c7ec8e18d11a443ad99dd5736e6295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/mensola/contenitore_COMBINED_M_R.png using Guid(54c7ec8e18d11a443ad99dd5736e6295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ce9628957c147d1db572e6bfacf7da') in 0.023872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/camera_da_letto/armadio/contenitore_COMBINED_M_R.png
+  artifactKey: Guid(38cee7a700942994a938710621d764a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/armadio/contenitore_COMBINED_M_R.png using Guid(38cee7a700942994a938710621d764a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2d3c50061f6afc6bd652aec13f3ff0') in 0.015599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/camera_da_letto/armadio/contenitore_norma.png
+  artifactKey: Guid(14e999a8d2ef608459b281e6a52bc28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/armadio/contenitore_norma.png using Guid(14e999a8d2ef608459b281e6a52bc28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726ef6161b2879e5282708177f087d8c') in 0.026727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/camera_da_letto/mensole/mensola/contenitore_norma.png
+  artifactKey: Guid(65e190b40627d004cac5aab0f6e4a87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/mensola/contenitore_norma.png using Guid(65e190b40627d004cac5aab0f6e4a87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b051f5e5a320220855d508f98e04259b') in 0.022760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/camera_da_letto/comodino/contenitore_COMBINED_M_R.png
+  artifactKey: Guid(48aa93fa31e725f489f267d32fb5ddb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodino/contenitore_COMBINED_M_R.png using Guid(48aa93fa31e725f489f267d32fb5ddb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114fed049e48e2a2c3a0b23ec66bd0b7') in 0.012953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_COMBINED_M_R.png
+  artifactKey: Guid(d57f91441502f024b87f9c8a85e0ef66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_COMBINED_M_R.png using Guid(d57f91441502f024b87f9c8a85e0ef66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51971076bbc31650faef8b3240754c46') in 0.016539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_norma.png
+  artifactKey: Guid(2a434661387f99546bfdb41203f3c3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/scrivania+ogg/scrivania/contenitore_norma.png using Guid(2a434661387f99546bfdb41203f3c3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d94b3b685b3666273af906b185b92e') in 0.018949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/camera_da_letto/cassettiera/contenitore_normal.png
+  artifactKey: Guid(7c51e389deb94904f89a000aa315a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/cassettiera/contenitore_normal.png using Guid(7c51e389deb94904f89a000aa315a5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49834d92f2003df70e58d3f3145b6848') in 0.020199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Models/camera_da_letto/cassettiera/contenitore_COMBINED_M_R.png
+  artifactKey: Guid(b0cca150a1c169a4aaeebb74c10e670e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/cassettiera/contenitore_COMBINED_M_R.png using Guid(b0cca150a1c169a4aaeebb74c10e670e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a93d0a30d7f22b1ba6c5fd8fafec89') in 0.016676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/camera_da_letto/comodino/comodino.fbx
+  artifactKey: Guid(34381e1c5ef05464289f7c442fa2180f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/comodino/comodino.fbx using Guid(34381e1c5ef05464289f7c442fa2180f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad971139f3ef272462d1df8e625aea70') in 0.081763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.156585 seconds.
+  path: Assets/Models/camera_da_letto/mensole/mensola/contenitore_roughness.png
+  artifactKey: Guid(1a159cd7e35c10d419c0325ad0f109e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/camera_da_letto/mensole/mensola/contenitore_roughness.png using Guid(1a159cd7e35c10d419c0325ad0f109e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc1aa7e381603176aeb3bbeffd7e69f') in 0.031978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.037585 seconds.
+  path: Assets/Menu/grafiche/hai_perso_rosa_ritenta.png
+  artifactKey: Guid(9bc713153fd26784881add8800dcdc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/grafiche/hai_perso_rosa_ritenta.png using Guid(9bc713153fd26784881add8800dcdc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33baee8940cb16ad8c80cd0e79c1a7ff') in 0.102533 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012027 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.564 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3565ms)
+		BeginReloadAssembly (462ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (28ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (207ms)
+		EndReloadAssembly (2868ms)
+			LoadAssemblies (195ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1032ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (128ms)
+			SetupLoadedEditorAssemblies (1303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (197ms)
+				ProcessInitializeOnLoadAttributes (794ms)
+				ProcessInitializeOnLoadMethodAttributes (266ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (0.8 MB). Loaded Objects now: 6292.
+Memory consumption went from 226.5 MB to 225.7 MB.
+Total: 10.838200 ms (FindLiveObjects: 0.600300 ms CreateObjectMapping: 0.680200 ms MarkObjects: 8.417400 ms  DeleteObjects: 1.138300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3825.132204 seconds.
+  path: Assets/Audio/audio tato che parla/2.1 ottimo ricomponi le parole.mp3
+  artifactKey: Guid(c8f2fe4a66764b34ea600bb77b9cec3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/audio tato che parla/2.1 ottimo ricomponi le parole.mp3 using Guid(c8f2fe4a66764b34ea600bb77b9cec3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e446c81e1114c8b6cea0485005590643') in 1.881863 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017041 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Polito\Realtà Virtuale\Github\Memorandum\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 39.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (39160ms)
+		BeginReloadAssembly (1033ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (39ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (492ms)
+		EndReloadAssembly (37074ms)
+			LoadAssemblies (501ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (3230ms)
+			ReleaseScriptCaches (9ms)
+			RebuildScriptCaches (415ms)
+			SetupLoadedEditorAssemblies (29001ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (122ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (8ms)
+				BeforeProcessingInitializeOnLoad (650ms)
+				ProcessInitializeOnLoadAttributes (9968ms)
+				ProcessInitializeOnLoadMethodAttributes (18051ms)
+				AfterProcessingInitializeOnLoad (191ms)
+				EditorAssembliesLoaded (6ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (282ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.8 MB). Loaded Objects now: 6309.
+Memory consumption went from 226.6 MB to 225.8 MB.
+Total: 19.909000 ms (FindLiveObjects: 1.559300 ms CreateObjectMapping: 1.544100 ms MarkObjects: 15.379900 ms  DeleteObjects: 1.421200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 15.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.8 MB). Loaded Objects now: 6309.
+Memory consumption went from 113.3 MB to 112.5 MB.
+Total: 13.755300 ms (FindLiveObjects: 0.844800 ms CreateObjectMapping: 0.693700 ms MarkObjects: 11.205700 ms  DeleteObjects: 1.008600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

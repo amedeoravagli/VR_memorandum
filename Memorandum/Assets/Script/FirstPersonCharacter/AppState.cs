@@ -27,6 +27,8 @@ public class AppState : MonoBehaviour
         _actionLauncher = GetComponent<ActionLauncher>();
         _available_cardtags = init_app._cardList;
         Debug.Log("Appstate: numRoom = " + _available_cardtags.Count);
+        
+
         //_winLauncher.GameWinEvent += OnWinAction;
     }
 
@@ -61,11 +63,9 @@ public class AppState : MonoBehaviour
             //GoToGameMenu();
         }
         
-        if (_roomIndex == 0)
-        {
-            _npc.WinMiniGame();
-        }
-
+       
+        _npc.WinMiniGame(newRoomIndex);
+        _actionLauncher.ActivateMinigame(newRoomIndex);
         _roomIndex = newRoomIndex;
         Debug.Log(_roomIndex);
     }

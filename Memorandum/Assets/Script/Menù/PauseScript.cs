@@ -7,7 +7,6 @@ public class PauseScript : MonoBehaviour
     bool isPaused;
     public GameObject pnlPause;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +20,7 @@ public class PauseScript : MonoBehaviour
         {
             //se rilasciamo il tasto esc andiamo in pausa
             ChangePauseStatus();
+            
         }
     }
 

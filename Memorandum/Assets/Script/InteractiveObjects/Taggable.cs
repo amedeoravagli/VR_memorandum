@@ -18,7 +18,7 @@ public class Taggable : Interactable
         //PositionigTMP();
     }
 
-    private void OnTestActiveEvent(bool isTest)
+    private void OnTestActiveEvent(bool isTest, int index)
     {
         if (isTest)
         _visualCardTag.text = "";
