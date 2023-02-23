@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -63,23 +64,27 @@ public class NPCScript : Interactable
         Floating();
 
         //Debug.Log("velocity" + _tato.velocity.sqrMagnitude);
-        if (_tato.velocity == Vector3.zero && _appstate.GetRoomIndex() != 0)
+        if (_tato.velocity.sqrMagnitude <= 0f && _appstate.GetRoomIndex() != 0)
         {
             if (_appstate.GetRoomIndex() == 1 && !_destinationA)
             {
-                _destinationA = true;
+      //          _destinationA = true;
                 //Debug.Log("Sono in camera da letto");
+ //               WatchTMP();
                 _tato.transform.rotation = _npcPos_camera_da_letto.transform.rotation;
 
             }
             else if (_appstate.GetRoomIndex() == 2 && !_destinationB)
             {
-                _destinationB = true;
+  //              _destinationB = true;
+//                WatchTMP();
+
                 _tato.transform.rotation = _npcPos_soggiorno.transform.rotation;
             }
             else if (_appstate.GetRoomIndex() == 3 && !_destinationC)
             {
-                _destinationC = true;
+    //            _destinationC = true;
+//                WatchTMP();
                 _tato.transform.rotation = _finishPosition.transform.rotation;
             }
         }
@@ -129,18 +134,22 @@ public class NPCScript : Interactable
 
     private void StartTest(bool isTest, int index)
     {
-        if(isTest && index == 0)
+        if(isTest && index == 0 && _active)
         {
             if (_source.isPlaying)
             {
                 _source.Stop();
             }
-
+            _index_audio = 2;
+            _numSeqAudio= 2;
+            StartCoroutine(playAudioSequentially());
+            /*
             //2.Assign current AudioClip to audiosource
             _source.clip = _audio_dialogues[2];
 
             //3.Play Audio
             _source.Play();
+            */
         }
     }
 
@@ -148,7 +157,7 @@ public class NPCScript : Interactable
     {
         if (_appstate.GetRoomIndex() == 0 && _active)
         {
-            _source.clip = _audio_dialogues[3];
+            _source.clip = _audio_dialogues[4];
 
             //3.Play Audio
             _source.Play();
@@ -185,12 +194,12 @@ public class NPCScript : Interactable
         //if (_appstate.GetRoomIndex() == _appstate.GetNumRoom())
         //{
         Debug.Log("Gioco finito : il tato si sposta in posizione " + _finishPosition.transform.position + " e la sua posizione attuale è " + _npcPos.transform.position);
-        _promptText.text = _dialogues[3];
+        _promptText.text = "Complimenti! Hai esplorato tutta la casa! Ora padroneggi la tecnica del palazzo della memoria: premi su di me per continuare ad esercitarti oppure premi sulla prossima porta per uscire";
             
         _active = true;
-        _npcPos.transform.position = _finishPosition.transform.position;
-        _npcPos.transform.rotation = _finishPosition.transform.rotation;
-        _index_audio = 4;
+        //_npcPos.transform.position = _finishPosition.transform.position;
+        //_npcPos.transform.rotation = _finishPosition.transform.rotation;
+        _index_audio = 5;
         _numSeqAudio = 2;
         StartCoroutine(playAudioSequentially());
             
@@ -228,8 +237,8 @@ public class NPCScript : Interactable
         if (caller.GetComponent<AppState>().GetRoomIndex() != 0)
         {
             _active = true;
-            _index_audio = 1; _numSeqAudio = 2;
-            StartCoroutine(TalkWithNPC());  
+            _index_audio = 2; _numSeqAudio = 2;
+            StartCoroutine(playAudioSequentially());  
             StartCoroutine(TalkWithNPC());
         }
 
@@ -270,7 +279,8 @@ public class NPCScript : Interactable
 
         //Vector3 newDirection = Vector3.RotateTowards(gameObject.transform.forward, targetDirection, rotationStep, 0.0f);
         //gameObject.transform.rotation = Quaternion.LookRotation(newDirection, gameObject.transform.up);
-        gameObject.transform.rotation = Quaternion.LookRotation(targetDirection, gameObject.transform.up);
+        _tato.transform.rotation = Quaternion.LookRotation(targetDirection, gameObject.transform.up);
+        //gameObject.transform.rotation = Quaternion.LookRotation(targetDirection, gameObject.transform.up);
         
     }
 

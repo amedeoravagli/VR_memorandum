@@ -8,7 +8,7 @@ public class MenuBehaviour : MonoBehaviour
 
     // Start is called before the first frame update
 
-    [SerializeField] private GameObject _canvas;
+    [SerializeField] private GameObject _start;
     
     
 
@@ -19,14 +19,14 @@ public class MenuBehaviour : MonoBehaviour
         {
             //se rilasciamo il tasto esc andiamo in pausa
             //SceneManager.LoadScene(1);
-            Back();
+            GoToStart();
         }
     }
 
-    public void Back()
+    public void GoToStart()
     {
 
-        _canvas.SetActive(true);
+        _start.SetActive(true);
         gameObject.SetActive(false);
     }
 }

@@ -1,15 +1,9 @@
-Ciao! benvenuto in Memorandum, io sono TATO e ti insegnerò come usare il palazzo della memoria, una delle tecniche di memorizzazione più efficaci e antiche.
-Questa tecnica si basa sull'associazione di parole o concetti da ricordare con luoghi fisici, o in questo caso virtuali.
-Scegli degli oggetti a cui associare le parole che ti verranno fornite e cerca di immaginare un'associazione tra le due.
-Ricordati di esplorare l'ambiente sempre in senso orario, così da ricordarti l'ordine.
-Questa tecnica si basa sull'associazione tra parole e oggetti nell'ambiente, devi prima familiarizzare con l'ambiente, vai a esplorare la tua nuova casa!
-Adesso prova a fare la prima associazione, scegli la parola che vuoi ricordare e collegala ad un oggetto di una stanza, avvicinati ad un oggetto per collegare la parola.
-Quando avrai finito vicino ad ogni porta ci sarà un piccolo test che ti permetterà di passare alla stanza successiva...
-e continuare metterti alla prova.
-*L'utente gira per la stanza e fa le associazioni.
-Quando avrai finito sono sicuro padroneggerai la tecnica del palazzo della memoria.
-Proviamo a fare un test per vedere se hai imparato.
-*-musichetta di gioco-
-*Passa alla prossima stanza!
-*a fine gioco
-*complimenti! hai esplorato tutta la casa! adesso padroneggi la tecnica del palazzo della memoria, usala per memorizzare ciò che ti serve. quando vorrai tornare a fare un ripasso, mi trovi all'ingresso.
+Ciao! Benvenuto in Memorandum, io sono Tato e sono qui per insegnarti il palazzo della memoria, una delle tecniche di memorizzazione maggiormente efficaci, in modo che tu possa applicarla autonomamente per ricordarti liste di parole e concetti nella vita di tutti i giorni.
+Questa tecnica si basa sull'associazione di parole a grandi oggetti in ambienti fisici o, come in questo caso, virtuali, creando nella propria mente dei collegamenti che possono comprendere azioni, scene bizzarre o qualsiasi ragionamento ti aiuti a legare i due elementi .
+Avvicinati ad un oggetto e, in base al collegamento che sei in grado di immaginare, associalo ad una parola scegliendola tra tra quelle proposte. Per vederle tutte scorri la rotella del mouse. Una volta finito procedi associando tutte le parole agli oggetti rimanenti e tenta il minigioco vicino alla porta!
+Ricordati di inserire le parole nell'ordine in cui le hai associate, le parole diventano verdi quando sono state inserite correttamente e in ordine, gialle se sono corrette ma in ordine sbagliato, e rosse se hai fatto un errore.
+Ottimo! Ora componi le parole memorizzate, facendoti aiutare dalle iniziali inserite.
+Ottimo! Ora tocca le parole nell'ordine in cui le hai appena associate.
+Ottimo! Ora ricomponi le parole memorizzate, mettendone in ordine le lettere.
+Stai attento! Hai a disposizione solo 3 tentativi!
+Bravo! Ora puoi passare alla prossima stanza dove troverai quattro nuove parole da associare e un minigioco che comprende sia le parole appena collegate sia quelle viste nella stanza precedente. Buon lavoro!

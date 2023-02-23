@@ -83,7 +83,6 @@ attento
 attenzione
 attesa
 attimo
-attività
 atto
 attore
 attorno
@@ -92,7 +91,6 @@ attuale
 aumentare
 automobile
 autore
-autorità
 avanti
 avanzare
 avere
@@ -132,7 +130,6 @@ buio
 buono
 buttare
 cadere
-caffè
 calcio
 caldo
 cambiare
@@ -172,18 +169,13 @@ chiave
 chiedere
 chiesa
 chilometro
-chissà
 chiudere
 ci
 ciascuno
 cielo
-cioè
 circa
 cittadino
-città
 civile
-civiltà
-ciò
 classe
 collina
 collo
@@ -284,7 +276,6 @@ difendere
 difesa
 differenza
 difficile
-difficoltà
 diffondere
 dimenticare
 dimostrare
@@ -363,7 +354,6 @@ estate
 estendere
 estero
 estremo
-età
 europeo
 evitare
 fabbrica
@@ -393,7 +383,6 @@ figurare
 film
 filo
 finalmente
-finché
 fine
 finestra
 finire
@@ -452,8 +441,6 @@ giugno
 giungere
 giustizia
 giusto
-già
-giù
 godere
 governo
 grado
@@ -542,7 +529,6 @@ levare
 li
 liberare
 libero
-libertà
 libro
 limitare
 limite
@@ -558,8 +544,6 @@ lui
 luna
 lungo
 luogo
-là
-lì
 ma
 macchina
 madre
@@ -602,7 +586,6 @@ metro
 mettere
 metà
 mezzo
-mi
 migliore
 milione
 militare
@@ -639,8 +622,6 @@ nazionale
 nazione
 ne
 neanche
-necessario
-necessità
 nemico
 nemmeno
 neppure
@@ -665,7 +646,6 @@ nulla
 numero
 numeroso
 nuovo
-né
 o
 occasione
 occhio
@@ -706,7 +686,6 @@ pagare
 pagina
 palazzo
 pane
-papà
 parecchio
 parere
 parete
@@ -731,8 +710,6 @@ pena
 pensare
 pensiero
 per
-perché
-perciò
 perdere
 perfetto
 perfino
@@ -743,7 +720,6 @@ permettere
 persona
 personaggio
 personale
-però
 pesare
 peso
 pezzo
@@ -758,13 +734,10 @@ piccolo
 piede
 pieno
 pietra
-pietà
 piuttosto
-più
 poco
 poesia
 poeta
-poiché
 politica
 politico
 polizia
@@ -780,7 +753,6 @@ posare
 posizione
 possedere
 possibile
-possibilità
 posto
 potenza
 potere
@@ -841,7 +813,6 @@ qualche
 qualcosa
 qualcuno
 quale
-qualità
 qualsiasi
 qualunque
 quanto
@@ -862,7 +833,6 @@ rapido
 rapporto
 rappresentare
 reale
-realtà
 recare
 recente
 regione
@@ -984,7 +954,6 @@ sistema
 situazione
 smettere
 sociale
-società
 soffrire
 sognare
 sogno
@@ -1108,7 +1077,6 @@ umano
 un
 unico
 unire
-università
 uno
 uomo
 usare
@@ -1127,7 +1095,6 @@ venire
 vento
 veramente
 verde
-verità
 vero
 verso
 vestire
@@ -1151,7 +1118,6 @@ voi
 volare
 volere
 volgere
-volontà
 volta
 voltare
 volto

@@ -30,6 +30,8 @@ public class DoorOpener : Interactable
         if (_door != null)
             _door.OpenDoor(doorRotation);
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
         
     }
